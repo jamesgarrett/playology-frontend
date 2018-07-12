@@ -1,0 +1,48 @@
+.cd-benefits{
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cd-benefits__container{
+	padding-top:2.5rem;
+	padding-bottom:2.5rem;
+}
+
+.cd-benefits__icons{
+	width:100%;
+}
+
+.cd-benefits__single{
+	width:100%;
+	display:inline-block;
+	padding:35px;
+	vertical-align: top;
+	sup{
+		font-size:.5rem;
+	}
+	.cd-benefits__icon img{
+		height:150px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.cd-benefits__single{
+		width:50%;
+	}
+	.cd-benefits__container{
+		padding-top:2.5rem;
+		padding-bottom:2.5rem;
+	}
+
+}
+
+@media only screen and (min-width: 1170px) {
+	.cd-benefits__single{
+		width:25%;
+	}
+	.cd-benefits__container{
+		padding-top:3rem;
+		padding-bottom:3rem;
+	}
+}

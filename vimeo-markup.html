@@ -1,0 +1,23 @@
+<!-- 	<div class="vimeo-lightbox hidden">
+		<icon class="exit"><img src="img/SVG/X.svg" width="25" alt="" onclick=""></icon>
+		<div data-vimeo-id="59777392" data-vimeo-defer id="made-in-ny"></div>
+	</div> -->
+	
+	<!-- <div data-vimeo-id="19231868" data-vimeo-defer data-vimeo-width="500" id="handstick"></div> -->
+
+	<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+	<script>
+	    var options = {
+	        width: 640,
+	        loop: true,
+	        autoplay: true
+	    };
+
+	    // Will create inside the made-in-ny-div:
+	    // <iframe src="https://player.vimeo.com/video/59777392?loop=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	    var madeInNy = new Vimeo.Player('made-in-ny', options);
+
+	    // Will create inside the handstick div:
+	    // <iframe src="https://player.vimeo.com/video/19231868?loop=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	    var handstick = new Vimeo.Player(document.getElementById('handstick'), options);
+	</script>
