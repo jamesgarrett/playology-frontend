@@ -1,0 +1,196 @@
+body.cms-index-index .hero-section {
+    height: 100vh;
+    position: relative
+}
+
+body.cms-index-index .hero-section .action.scroll-down {
+    display: inline-block;
+    text-decoration: none;
+    bottom: 40px;
+    cursor: pointer;
+    left: 50%;
+    line-height: normal;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1
+}
+
+body.cms-index-index .hero-section .action.scroll-down:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 5rem;
+    line-height: inherit;
+    color: #ffec00;
+    content: "\e586";
+    font-family: 'playology-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center
+}
+
+body.cms-index-index .hero-section .inline-YTPlayer {
+    position: relative
+}
+
+body.cms-index-index .hero-section .inline-YTPlayer,
+body.cms-index-index .hero-section .inline-YTPlayer::after {
+    height: 100%;
+    max-width: 100% !important
+}
+
+body.cms-index-index .hero-section .inline-YTPlayer::after {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    width: 100%
+}
+
+body.cms-index-index .hero-section #video-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    bottom: 0;
+    height: auto !important;
+    min-height: 100%;
+    min-width: 100%;
+    perspective: 1000;
+    position: fixed !important;
+    padding: 0 !important;
+    right: 0;
+    top: 70px;
+    width: auto
+}
+
+body.cms-index-index .hero-section .hero-content {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%
+}
+
+body.cms-index-index .section-content,
+body.cms-index-index .hero-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 22px
+}
+
+body.cms-index-index .section {
+    background-color: #fff;
+    width: 100vw
+}
+
+body.cms-index-index .section .cta.button {
+    margin-top: 37px
+}
+
+body.cms-index-index .section.parallax-section,
+body.cms-index-index .section.static-section {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: 1
+}
+
+body.cms-index-index .section.parallax-section {
+    background-size: cover;
+    min-height: 100vh;
+    transform: translateZ(0)
+}
+
+body.cms-index-index .section.static-section {
+    height: 650px
+}
+
+body.cms-index-index .section#dogs-sense .subheading {
+    margin-top: 12px
+}
+
+body.cms-index-index .section#science .heading-xl {
+    margin: 2px 0
+}
+
+body.cms-index-index .section .equation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+    margin-top: 60px
+}
+
+body.cms-index-index .section .equation-list li {
+    color: #404040;
+    font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.03;
+    font-size: 3rem
+}
+
+body.cms-index-index .section .equation-list li.sign {
+    color: #404040;
+    font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: .86;
+    font-size: 5rem
+}
+
+body.cms-index-index .section#safety .subheading {
+    margin: 11px auto 0;
+    max-width: 745px
+}
+
+body.cms-index-index .section#tell-us .subheading {
+    margin: 17px auto 0;
+    max-width: 778px
+}
+
+body.cms-index-index .section.carousel-section {
+    padding-top: 92px
+}
+
+body.cms-index-index .section h1,
+body.cms-index-index .section h2,
+body.cms-index-index .section h3,
+body.cms-index-index .section h4,
+body.cms-index-index .section h5,
+body.cms-index-index .section h6 {
+    margin: 0
+}

@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/home-archive.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/home-archive.html",
+		"oF": 0
+		},
 	"\/home.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -27,11 +34,220 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/dogbone.png": {
+		"ft": 32768,
+		"iS": 592976,
+		"oA": 0,
+		"oAP": "\/img\/dogbone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/ellis-safety.png": {
+		"ft": 32768,
+		"iS": 1475446,
+		"oA": 0,
+		"oAP": "\/img\/ellis-safety.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/equation.png": {
+		"ft": 32768,
+		"iS": 635538,
+		"oA": 0,
+		"oAP": "\/img\/equation.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/final-cta-4.jpg": {
+		"ft": 16384,
+		"iS": 103261,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/final-cta-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/nerd-dog.png": {
 		"ft": 32768,
 		"iS": 744390,
 		"oA": 0,
 		"oAP": "\/img\/nerd-dog.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/playology-snapshot.png": {
+		"ft": 32768,
+		"iS": 3099997,
+		"oA": 0,
+		"oAP": "\/img\/playology-snapshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/dog-safe-materials@2x.png": {
+		"ft": 32768,
+		"iS": 3862,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/dog-safe-materials@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/durable@2x.png": {
+		"ft": 32768,
+		"iS": 6724,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/durable@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/easy-to-clean@2x.png": {
+		"ft": 32768,
+		"iS": 5328,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/easy-to-clean@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/encapsicent-1@2x.png": {
+		"ft": 32768,
+		"iS": 17149,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/encapsicent-1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/encapsicent-2.png": {
+		"ft": 32768,
+		"iS": 12951,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/encapsicent-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/encapsicent-2@2x.png": {
+		"ft": 32768,
+		"iS": 9298,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/encapsicent-2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/encapsicent-3@2x.png": {
+		"ft": 32768,
+		"iS": 15874,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/encapsicent-3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/slobber-wicking@2x.png": {
+		"ft": 32768,
+		"iS": 4321,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/slobber-wicking@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/PNG\/treat-free@2x.png": {
+		"ft": 32768,
+		"iS": 5188,
+		"oA": 0,
+		"oAP": "\/img\/PNG\/treat-free@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/screenshot-test.png": {
+		"ft": 32768,
+		"iS": 204345,
+		"oA": 0,
+		"oAP": "\/img\/screenshot-test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/sense of smell slide.jpg": {
+		"ft": 16384,
+		"iS": 862561,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/sense of smell slide.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/smell-bg-desktop.png": {
+		"ft": 32768,
+		"iS": 394595,
+		"oA": 0,
+		"oAP": "\/img\/smell-bg-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/smell-bg-mobile.png": {
+		"ft": 32768,
+		"iS": 696076,
+		"oA": 0,
+		"oAP": "\/img\/smell-bg-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/smell-bg-tablet.png": {
+		"ft": 32768,
+		"iS": 403453,
+		"oA": 0,
+		"oAP": "\/img\/smell-bg-tablet.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -129,11 +345,25 @@
 		"oAP": "\/index.min.html",
 		"oF": 0
 		},
+	"\/jackmyers-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/jackmyers-template.html",
+		"oF": 0
+		},
 	"\/license.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/license.txt",
+		"oF": 0
+		},
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -217,6 +447,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/styles\/_homepage-style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/_homepage-style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/styles\/_owlcarousel.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -226,6 +469,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/styles\/_owlcarousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/_talos-home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/_talos-home.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -252,6 +508,29 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/styles\/_video.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/home.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/styles\/home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/home.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -320,7 +599,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 552588637,
-	"displayValue": "science-page",
+	"displayValue": "playology-front-end",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-wonka",
 	"iconImageWasSetByUser": 0
