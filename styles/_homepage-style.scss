@@ -1,3 +1,266 @@
+ /* GENERAL */
+
+.cd-nose, .cd-engagement, .cd-hero, .cd-safety{
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.cd-engagement__container, .cd-safety__container, .cd-nose__container{
+	width:50%;
+	height:100vh;
+}
+
+.heading-hero{
+	font-weight: 700;
+}
+
+.cd-content__container{
+	text-align: center;
+	h1, h2, h3, h4, h5, h6{
+		margin:0 auto;
+	}
+	.cta.button, .cta.button.outline-light{
+		margin-top: 5vh;
+	}
+}
+
+@media only screen and (min-width: 1170px) {
+	.cd-content__container{
+		.heading-hero{
+			font-size: 8.1999rem;
+		}
+		.subheading{
+			font-size:4.55rem;
+		}
+	}
+	.button.outline-light, .action.outline-light{
+		font-size:2.5rem;
+		height:50px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.cd-content__container{
+		.heading-hero{
+			font-size: 4.5rem;
+		}
+		.subheading{
+			font-size:3.5rem;
+		}
+	}
+}
+
+
+/*HERO SECTION*/
+
 .cd-hero{
-    background-image: url('img/playology-snapshot.png');
+	.cd-content__container{
+		padding:35vh 0;
+	}
+	.action.scroll-down {
+	    display: inline-block;
+	    text-decoration: none;
+	    bottom: 100px;
+	    cursor: pointer;
+	    left: 50%;
+	    line-height: normal;
+	    position: absolute;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    z-index: 1
+	}
+	.action.scroll-down:before {
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    font-size: 5rem;
+	    line-height: inherit;
+	    color: #ffec00;
+	    content: "\e586";
+	    font-family: 'playology-icons';
+	    vertical-align: middle;
+	    display: inline-block;
+	    font-weight: normal;
+	    overflow: hidden;
+	    speak: none;
+	    text-align: center
+	}
+}
+
+
+/* NOSE SECTION */
+
+
+.cd-nose__container{
+	width:60%;
+	position:relative;
+	.cd-header{
+		text-align: left;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: 25%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.cd-nose, .cd-engagement, .cd-safety{
+			.cd-nose__container, .cd-engagement__container, .cd-safety__container{
+			width:100%;
+			margin-left:auto;
+			margin-right: auto;
+			.cd-header{
+				text-align: center;
+				margin-left: 5%;
+				width:90%;
+			}
+		}
+	}
+	.cd-nose{
+		background-position:right;
+	}
+	.cd-engagement{
+		background-position: left;
+	}
+	.cd-safety{
+		background-position:right;
+	}
+}
+
+/* ENGAGEMENT SECTION */
+
+.cd-engagement__container{
+	position:relative;
+	margin-left: 50%;
+	.cd-header{
+		text-align: right;
+		position:absolute;
+		top:50%;
+		transform: translateY(-50%);
+		margin-right: 25%;
+	}
+}
+
+
+
+/* SAFETY */
+
+.cd-safety__container{
+	position:relative;
+	.cd-header{
+		text-align: left;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: 25%;
+	}
+}
+
+/* FEATURES */
+
+.cd-features{
+	text-align: center;
+	.cd-features__container{
+		padding:15vh 0;
+	}
+	.cd-header h1{
+		color:#222;
+		margin-bottom: 5rem;
+	}
+	.icon-box{
+		display: inline-block;
+		margin:2.5em auto;
+		width: 180px;
+		.top{
+			max-width:60%;
+			vertical-align: top;
+			margin:0 auto;
+			height:150px;
+			img{
+				vertical-align: middle;
+				max-height:100px;
+			}
+		}
+		.bottom{
+			display: grid;
+			font-size: 2.5rem;
+			padding-top: 2.5rem;
+			h4{
+				color:#222;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.cd-features{
+		.cd-header h1{
+			margin-bottom: 2.5rem;
+		}
+		.cd-features__container{
+			max-width:600px;
+			margin:0 auto;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 1170px) {
+	.cd-features{
+		.cd-features__container{
+			max-width:1200px;
+			margin:0 auto;
+		}
+	}
+}
+
+/* TECHNOLOGY */
+
+/* DOGGO */
+
+.cd-doggo{
+	height: 80vh;
+	.cd-doggo__container{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		h1, h2, h3, h4, h5, h6{
+			margin:0;
+		}
+	}
+	.right{
+		background: #222;
+		height: inherit;
+		text-align: left;
+		flex: 1;
+		padding-left: 25px;
+		position:relative;
+		.cd-header{
+			position:absolute;
+			top:50%;
+			transform: translateY(-50%);
+		}
+	}
+	.left{
+		background-image: url('../img/panel-7.jpg');
+		background-position: center center;
+		background-size: cover;
+		flex: 1;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.cd-doggo{
+		height:120vh;
+		.cd-doggo__container{
+			flex-direction:column;
+			.right{
+				text-align: center;
+			}
+		}
+	}
 }

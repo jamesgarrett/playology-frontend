@@ -45,39 +45,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/ellis-safety.png": {
-		"ft": 32768,
-		"iS": 1475446,
-		"oA": 0,
-		"oAP": "\/img\/ellis-safety.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/equation.png": {
-		"ft": 32768,
-		"iS": 635538,
-		"oA": 0,
-		"oAP": "\/img\/equation.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/final-cta-4.jpg": {
-		"ft": 16384,
-		"iS": 103261,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/final-cta-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/img\/nerd-dog.png": {
 		"ft": 32768,
 		"iS": 744390,
@@ -89,15 +56,81 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/playology-snapshot.png": {
+	"\/img\/panel-1.png": {
 		"ft": 32768,
 		"iS": 3099997,
 		"oA": 0,
-		"oAP": "\/img\/playology-snapshot.png",
+		"oAP": "\/img\/panel-1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/img\/panel-2-mobile.png": {
+		"ft": 32768,
+		"iS": 696076,
+		"oA": 0,
+		"oAP": "\/img\/panel-2-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/panel-2-tablet.png": {
+		"ft": 32768,
+		"iS": 403453,
+		"oA": 0,
+		"oAP": "\/img\/panel-2-tablet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/panel-2.png": {
+		"ft": 32768,
+		"iS": 394595,
+		"oA": 0,
+		"oAP": "\/img\/panel-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/panel-5.jpg": {
+		"ft": 16384,
+		"iS": 304407,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/panel-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/panel-6.jpg": {
+		"ft": 16384,
+		"iS": 316211,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/panel-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/panel-7.jpg": {
+		"ft": 16384,
+		"iS": 103261,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/panel-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/img\/PNG\/dog-safe-materials@2x.png": {
@@ -199,61 +232,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/screenshot-test.png": {
-		"ft": 32768,
-		"iS": 204345,
-		"oA": 0,
-		"oAP": "\/img\/screenshot-test.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/sense of smell slide.jpg": {
-		"ft": 16384,
-		"iS": 862561,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/sense of smell slide.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/smell-bg-desktop.png": {
-		"ft": 32768,
-		"iS": 394595,
-		"oA": 0,
-		"oAP": "\/img\/smell-bg-desktop.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/smell-bg-mobile.png": {
-		"ft": 32768,
-		"iS": 696076,
-		"oA": 0,
-		"oAP": "\/img\/smell-bg-mobile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/smell-bg-tablet.png": {
-		"ft": 32768,
-		"iS": 403453,
-		"oA": 0,
-		"oAP": "\/img\/smell-bg-tablet.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/img\/SVG\/chew.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -331,25 +309,11 @@
 		"oAP": "\/index-2.html",
 		"oF": 0
 		},
-	"\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/index.min.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/index.min.html",
-		"oF": 0
-		},
-	"\/jackmyers-template.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/jackmyers-template.html",
 		"oF": 0
 		},
 	"\/license.txt": {
@@ -383,6 +347,13 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/science.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science.html",
+		"oF": 0
 		},
 	"\/scripts\/index-min.js": {
 		"ft": 64,
