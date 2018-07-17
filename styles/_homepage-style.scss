@@ -26,21 +26,6 @@
 	}
 }
 
-@media only screen and (min-width: 1170px) {
-	.cd-content__container{
-		.heading-hero{
-			font-size: 8.1999rem;
-		}
-		.subheading{
-			font-size:4.55rem;
-		}
-	}
-	.button.outline-light, .action.outline-light{
-		font-size:2.5rem;
-		height:50px;
-	}
-}
-
 @media only screen and (max-width: 640px) {
 	.cd-content__container{
 		.heading-hero{
@@ -58,6 +43,7 @@
 .cd-hero{
 	.cd-content__container{
 		padding:35vh 0;
+		position:relative;
 	}
 	.action.scroll-down {
 	    display: inline-block;
@@ -246,7 +232,6 @@
 		}
 	}
 	.left{
-		background-image: url('../img/panel-7.jpg');
 		background-position: center center;
 		background-size: cover;
 		flex: 1;
@@ -255,11 +240,15 @@
 
 @media only screen and (max-width: 640px) {
 	.cd-doggo{
-		height:120vh;
+		height:unset;
 		.cd-doggo__container{
 			flex-direction:column;
 			.right{
 				text-align: center;
+				height:545px;
+			}
+			.left{
+				height:385px;
 			}
 		}
 	}

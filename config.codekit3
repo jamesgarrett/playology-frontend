@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/-ni": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/-ni",
+		"oF": 0
+		},
 	"\/home-archive.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -23,42 +30,111 @@
 		"oAP": "\/home.html",
 		"oF": 0
 		},
-	"\/img\/dog-nose.png": {
+	"\/home.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/home.min.html",
+		"oF": 0
+		},
+	"\/homesvg.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/homesvg.min.html",
+		"oF": 0
+		},
+	"\/img\/archived\/dog-nose.png": {
 		"ft": 32768,
 		"iS": 492515,
 		"oA": 0,
-		"oAP": "\/img\/dog-nose.png",
+		"oAP": "\/img\/archived\/dog-nose.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/dogbone.png": {
+	"\/img\/archived\/dogbone.png": {
 		"ft": 32768,
 		"iS": 592976,
 		"oA": 0,
-		"oAP": "\/img\/dogbone.png",
+		"oAP": "\/img\/archived\/dogbone.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/nerd-dog.png": {
+	"\/img\/archived\/nerd-dog.png": {
 		"ft": 32768,
 		"iS": 744390,
 		"oA": 0,
-		"oAP": "\/img\/nerd-dog.png",
+		"oAP": "\/img\/archived\/nerd-dog.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/img\/archived\/panel-2-mobile.png": {
+		"ft": 32768,
+		"iS": 696076,
+		"oA": 0,
+		"oAP": "\/img\/archived\/panel-2-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/archived\/panel-2-tablet.png": {
+		"ft": 32768,
+		"iS": 403453,
+		"oA": 0,
+		"oAP": "\/img\/archived\/panel-2-tablet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/archived\/panel-5.jpg": {
+		"ft": 16384,
+		"iS": 304407,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/archived\/panel-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/archived\/panel-6.jpg": {
+		"ft": 16384,
+		"iS": 316211,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/archived\/panel-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/archived\/panel-7.jpg": {
+		"ft": 16384,
+		"iS": 103261,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/archived\/panel-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/img\/panel-1.png": {
 		"ft": 32768,
-		"iS": 3099997,
+		"iS": 615693,
 		"oA": 0,
 		"oAP": "\/img\/panel-1.png",
 		"oF": 0,
@@ -67,31 +143,9 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/panel-2-mobile.png": {
-		"ft": 32768,
-		"iS": 696076,
-		"oA": 0,
-		"oAP": "\/img\/panel-2-mobile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/panel-2-tablet.png": {
-		"ft": 32768,
-		"iS": 403453,
-		"oA": 0,
-		"oAP": "\/img\/panel-2-tablet.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/img\/panel-2.png": {
 		"ft": 32768,
-		"iS": 394595,
+		"iS": 619239,
 		"oA": 0,
 		"oAP": "\/img\/panel-2.png",
 		"oF": 0,
@@ -100,37 +154,37 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/panel-5.jpg": {
-		"ft": 16384,
-		"iS": 304407,
-		"jF": 0,
+	"\/img\/panel-5.png": {
+		"ft": 32768,
+		"iS": 747497,
 		"oA": 0,
-		"oAP": "\/img\/panel-5.jpg",
+		"oAP": "\/img\/panel-5.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/img\/panel-6.jpg": {
-		"ft": 16384,
-		"iS": 316211,
-		"jF": 0,
+	"\/img\/panel-6.png": {
+		"ft": 32768,
+		"iS": 194544,
 		"oA": 0,
-		"oAP": "\/img\/panel-6.jpg",
+		"oAP": "\/img\/panel-6.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/img\/panel-7.jpg": {
-		"ft": 16384,
-		"iS": 103261,
-		"jF": 0,
+	"\/img\/panel-7.png": {
+		"ft": 32768,
+		"iS": 448907,
 		"oA": 0,
-		"oAP": "\/img\/panel-7.jpg",
+		"oAP": "\/img\/panel-7.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/PNG\/dog-safe-materials@2x.png": {
