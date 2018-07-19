@@ -42,7 +42,7 @@
 
 .cd-hero{
 	.cd-content__container{
-		padding:35vh 0;
+		padding:25vh 0;
 		position:relative;
 	}
 	.action.scroll-down {
@@ -153,7 +153,6 @@
 		padding:15vh 0;
 	}
 	.cd-header h1{
-		color:#222;
 		margin-bottom: 5rem;
 	}
 	.icon-box{
@@ -172,11 +171,6 @@
 		}
 		.bottom{
 			display: grid;
-			font-size: 2.5rem;
-			padding-top: 2.5rem;
-			h4{
-				color:#222;
-			}
 		}
 	}
 }

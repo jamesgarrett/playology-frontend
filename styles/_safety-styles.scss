@@ -1,0 +1,230 @@
+ /* GENERAL */
+
+ .cd-header{
+ 	text-align: center;
+ 	margin: auto 2rem;
+	h3{
+		max-width: 700px;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+	}
+ }
+
+.cd-nose, .cd-natural, .cd-hero, .cd-safety{
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.cd-natural__container, .cd-safety__container{
+	width:50%;
+	height:100vh;
+}
+
+.heading-hero{
+	font-weight: 700;
+}
+
+.cd-content__container{
+	text-align: center;
+	h1, h2, h3, h4, h5, h6{
+		margin:0 auto;
+	}
+	.cta.button, .cta.button.outline-light{
+		margin-top: 5vh;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.cd-content__container{
+		.heading-hero{
+			font-size: 4.5rem;
+		}
+		.subheading{
+			font-size:3.5rem;
+		}
+	}
+}
+
+
+/* DOG OBSESSED */
+
+.cd-hero{
+	background:#efefef;
+	padding:44px 0px;
+	h1 sup{
+		line-height: 5.45rem !important;
+	}
+	.cd-hero_founder-img{
+		margin-bottom: 2.5rem;
+		img{
+			height:300px;
+			margin:1rem;
+		}
+	}
+	.cd-hero__description{
+		max-width:768px;
+		margin:0 auto;
+		font-size:1.5rem;
+	}
+}
+
+.css-carousel-container{
+	display:none;
+}
+
+@media only screen and (max-width: 768px){
+	.css-carousel-container{
+		display:block;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.cd-hero_founder-img{
+		display:none;
+	}
+}
+
+/* DOG SAFE MATERIALS */
+
+.cd-dog-safe{
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* NATURAL SCENTS */
+
+@media only screen and (max-width: 968px){
+	.cd-natural{
+		.cd-natural__container{
+			width:65%;
+			margin-left:35%;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.cd-natural{
+			.cd-natural__container{
+			width:100%;
+			margin-left:auto;
+			margin-right: auto;
+			background: rgba(0,0,0,.6);
+			.cd-header{
+				text-align: center;
+				margin-left: 5%;
+				width:90%;
+			}
+		}
+	}
+	.cd-natural{
+		background-position: 30%;
+		background-attachment: scroll;
+	}
+}
+
+.cd-natural__container{
+	position:relative;
+	margin-left: 50%;
+	.cd-header{
+		text-align: right;
+		position:absolute;
+		top:50%;
+		transform: translateY(-50%);
+		margin-right: 25%;
+		.cd-scents{
+			font-weight: 700;
+			margin:2.5rem auto;
+				min-width:427px;
+			span{
+				padding:10px 35px;
+				font-size: 2rem;
+				margin-right: 1rem;
+				color: #222 !important;
+				cursor: pointer;
+			}
+			:first-child{
+				background-color: yellow;
+				&:hover{
+					background-color:lighten(#ffff04,30);
+				}
+			}
+			:nth-child(2){
+				background-color:#222;
+				a{color:white;}
+				color:white !important;
+				&:hover{
+					background-color:lighten(#222,30);
+				}
+			}
+			:nth-child(3){
+				background-color: red;
+				margin-right: 5px;
+				&:hover{
+					background-color:lighten(red,30);
+				}
+			}
+			a{
+				background-color: transparent!important;
+				color: #222;
+			}
+		}
+	}
+}
+
+
+/* BENEFITS */
+
+.cd-benefits{
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cd-benefits__container, .cd-hero__container{
+	padding-top:2.5rem;
+	padding-bottom:2.5rem;
+	background-size:50%;
+	background-position:right center;
+}
+
+.cd-benefits__icons{
+	width:100%;
+}
+
+.cd-benefits__single{
+	width:100%;
+	display:inline-block;
+	padding:35px;
+	vertical-align: top;
+	sup{
+		font-size:.5rem;
+	}
+	.cd-benefits__icon img{
+		height:150px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.cd-benefits__single{
+		width:50%;
+	}
+	.cd-benefits__container{
+		padding-top:2.5rem;
+		padding-bottom:2.5rem;
+	}
+
+}
+
+@media only screen and (min-width: 1170px) {
+	.cd-benefits__single{
+		width:25%;
+	}
+	.cd-benefits__container{
+		padding-top:3rem;
+		padding-bottom:3rem;
+	}
+}
+

@@ -4,7 +4,7 @@
  */
 
 (function(){
-    // Vertical Timeline - by CodyHouse.co
+    // Vertical Timeline - 
 	function VerticalTimeline( element ) {
 		this.element = element;
 		this.blocks = this.element.getElementsByClassName("js-cd-block");

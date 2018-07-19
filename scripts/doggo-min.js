@@ -1,0 +1,1 @@
+var doggos=[{name:"Lucy",weight:"8 lbs"},{name:"Lionel",weight:"8 lbs"},{name:"Fido",weight:"8 lbs"},{name:"Rex",weight:"8 lbs"}],string="";$.each(doggo,function(e,n){string+=n}),console.log(string),$(document).ready(function(){setTimeout(function(){$("#name").fadeOut()},2e3)});
