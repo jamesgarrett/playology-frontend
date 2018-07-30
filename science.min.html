@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	
+	<style>/**
+ * index.scss
+ */
+.cd-facts {
+  padding: 2rem auto; }
+  .cd-facts .cd-header {
+    text-align: left;
+    padding-left: 40px; }
+
+.cd-facts__container {
+  background: #000;
+  background: #000 url('{{media url="wysiwyg/science-page/dog-nose.png"}}');
+  padding-top: 50%;
+  background-size: 50%;
+  background-position: 50% 10%;
+  background-repeat: no-repeat; }
+
+.cd-facts__list {
+  width: 90%;
+  margin-left: 0 auto;
+  list-style-type: circle;
+  text-align: left;
+  font-size: 1.8rem; }
+
+@media only screen and (min-width: 768px) {
+  .cd-facts .cd-header {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto; }
+  .cd-facts__container {
+    padding-top: 40%;
+    background-size: 35%;
+    background-position: 50% 15%;
+    background-repeat: no-repeat; } }
+
+@media only screen and (min-width: 1170px) {
+  .cd-facts {
+    padding: 3rem auto; }
+    .cd-facts .cd-header {
+      text-align: center;
+      max-width: 750px; }
+  .cd-facts__container {
+    padding-top: revert;
+    background-size: 25%;
+    background-position: 25% 100%;
+    background-repeat: no-repeat; }
+  .cd-facts__list {
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 5%; }
+  .cd-fact__bullet {
+    max-width: 400px;
+    padding-bottom: .9rem; } }
+
+.cd-video__container {
+  background: url("https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/nerd-dog.png");
+  background-position: top center;
+  background-size: cover;
+  height: 650px; }
+  .cd-video__container .cd-header {
+    padding-top: 200px; }
+  .cd-video__container a.cd-video__button {
+    margin-top: 2.4rem; }
+
+.hidden {
+  display: none; }
+
+.vimeo-lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0; }
+  .vimeo-lightbox div {
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%); }
+  .vimeo-lightbox .exit {
+    position: fixed;
+    top: 25px;
+    right: 25px; }
+    .vimeo-lightbox .exit .cls-1 {
+      fill: #efefef; }
+      .vimeo-lightbox .exit .cls-1:hover {
+        fill: white; }
+
+.cd-benefits {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.cd-benefits__container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.cd-benefits__icons {
+  width: 100%; }
+
+.cd-benefits__single {
+  width: 100%;
+  display: inline-block;
+  padding: 35px;
+  vertical-align: top; }
+  .cd-benefits__single sup {
+    font-size: .5rem; }
+  .cd-benefits__single .cd-benefits__icon img {
+    height: 150px; }
+
+@media only screen and (min-width: 768px) {
+  .cd-benefits__single {
+    width: 50%; }
+  .cd-benefits__container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; } }
+
+@media only screen and (min-width: 1170px) {
+  .cd-benefits__single {
+    width: 25%; }
+  .cd-benefits__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+
+.swatch-attribute-label {
+  font-weight: bold;
+  position: relative; }
+
+.swatch-attribute-label.required {
+  padding-right: 10px; }
+
+.swatch-attribute-label[data-required="1"]:after {
+  content: '*';
+  color: red;
+  position: absolute;
+  right: -11px;
+  top: -2px;
+  font-weight: bold;
+  font-size: 1em; }
+
+.swatch-attribute-selected-option {
+  color: #646464;
+  padding-left: 17px; }
+
+.swatch-attribute-options {
+  margin-top: 10px; }
+
+.swatch-attribute-options:focus {
+  box-shadow: none; }
+
+.swatch-option {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  max-width: 90px;
+  float: left;
+  height: 20px;
+  margin-right: 6px;
+  min-width: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis; }
+
+.swatch-option.text {
+  background: #fff;
+  border: 1px solid #979797;
+  color: #979797;
+  font-size: 10px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 25px;
+  min-width: 25px; }
+
+.swatch-option.selected, .swatch-option:not(.disabled):hover {
+  border-color: #979797; }
+
+.swatch-option.text.selected, .swatch-option.text:not(.disabled):hover {
+  background-color: #979797 !important;
+  color: #f1f1f1; }
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.swatch-option.disabled {
+  cursor: default; }
+
+.swatch-option.disabled:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -moz-linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(42%, rgba(255, 255, 255, 0)), color-stop(43%, white), color-stop(46%, white), color-stop(47%, #ff5216), color-stop(53%, #ff5216), color-stop(54%, white), color-stop(57%, white), color-stop(58%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%); }
+
+.swatch-option-tooltip {
+  border-radius: 10px;
+  color: #949494;
+  display: none;
+  max-height: 100%;
+  max-width: 140px;
+  min-height: 20px;
+  min-width: 20px;
+  position: absolute;
+  text-align: center;
+  z-index: 99; }
+
+.swatch-option-tooltip .corner,
+.swatch-option-tooltip-layered
+.corner {
+  left: 40%;
+  position: absolute;
+  bottom: 0;
+  height: 8px; }
+
+.swatch-option-tooltip .corner:after,
+.swatch-option-tooltip-layered .corner:after {
+  content: '';
+  position: relative;
+  top: -2px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #fff transparent transparent transparent;
+  font-size: 1px; }
+
+.swatch-option-tooltip .corner:before,
+.swatch-option-tooltip-layered .corner:before {
+  content: '';
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #cacaca transparent transparent transparent;
+  font-size: 1px; }
+
+.swatch-option-tooltip .image,
+.swatch-option-tooltip-layered
+.image {
+  border-radius: 10px 10px 0 0;
+  display: block;
+  height: 75px;
+  margin: 0 auto;
+  width: 78px; }
+
+.swatch-option-tooltip
+.title {
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-radius: 0 0 10px 10px;
+  color: #404040;
+  display: block;
+  max-width: 140px;
+  min-height: 20px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center; }
+
+.swatch-opt {
+  margin: 20px 0; }
+
+.swatch-more {
+  display: inline-block;
+  margin: 2px 0;
+  text-decoration: none !important;
+  position: static;
+  z-index: 1; }
+
+.swatch-option-link-layered {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.swatch-option-link-layered:focus > div {
+  box-shadow: 0 0 3px 1px #68a8e0; }
+
+.swatch-option-tooltip-layered {
+  width: 140px;
+  position: absolute;
+  background: #fff;
+  color: #949494;
+  border: 1px solid #adadad;
+  display: none;
+  z-index: 999;
+  left: -47px; }
+
+.swatch-visual-tooltip-layered {
+  height: 160px;
+  top: -170px; }
+
+.swatch-textual-tooltip-layered {
+  height: 30px;
+  top: -40px; }
+
+.swatch-option-link-layered:hover > .swatch-option-tooltip-layered {
+  display: block; }
+
+.swatch-attribute-options .swatch-option-tooltip-layered
+.title {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  color: #282828;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.swatch-option-disabled:after {
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 2px;
+  background: red;
+  transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  z-index: 995;
+  left: -4px;
+  top: 10px; }
+
+.swatch-option-disabled {
+  cursor: default;
+  border: 0; }
+
+.swatch-opt-listing {
+  margin-bottom: 10px; }
+
+.swatch-option-loading {
+  content: url(https://d34kyjzgista3m.cloudfront.net/frontend/BigHippo/Playology/en_US/Magento_Swatches/images/loader-2.gif); }
+
+.swatch-input {
+  left: -1000px;
+  position: absolute;
+  visibility: hidden; }
+
+/* -------------------------------- 
+Primary style
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  color: #7f8c97;
+  background-color: #fff;
+  margin: 0; }
+
+a {
+  color: #acb7c0;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+h1, h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold; }
+
+.breadcrumbs, .page-title-wrapper {
+  display: none !important; }
+
+/* -------------------------------- 
+Patterns - reusable parts of our design
+-------------------------------- */
+@media only screen and (min-width: 1170px) {
+  .cd-is-hidden {
+    visibility: hidden; }
+  .breadcrumbs, .page-title-wrapper {
+    display: block; }
+  h1 sup {
+    line-height: 3.6 !important; } }
+
+.text-white {
+  color: white !important; }
+
+.text-dark {
+  color: #222 !important; }
+
+h1 sup {
+  font-size: small;
+  vertical-align: text-top;
+  line-height: 2.2; }
+
+/* -------------------------------- 
+Vertical Timeline
+-------------------------------- */
+.cd-header {
+  padding: 20px 10px;
+  text-align: center; }
+  .cd-header h1 {
+    font-size: 2.4rem; }
+  .cd-header h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 0 auto; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-header h1 {
+    font-size: 4.5rem; }
+  .cd-header h4 {
+    font-size: 2.5rem; } }
+
+.cd-timeline {
+  overflow: hidden;
+  margin: 2em auto; }
+
+.cd-timeline__container {
+  position: relative;
+  width: 90%;
+  max-width: 1170px;
+  margin: 2em auto;
+  padding: 0;
+  background: #fff; }
+
+.cd-timeline__container::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 80%;
+  width: 4px;
+  background: #222; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em; }
+  .cd-timeline__container::before {
+    left: 50%;
+    margin-left: -2px; } }
+
+.cd-timeline__block {
+  position: relative;
+  margin: 2em 0; }
+
+.cd-timeline__block:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both; }
+
+.cd-timeline__block:first-child {
+  margin-top: 0; }
+
+.cd-timeline__block:last-child {
+  margin-bottom: 0; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__block {
+    margin: 4em 0; } }
+
+.cd-timeline__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 4px #222, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #222, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+
+.cd-timeline__img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px; }
+
+.cd-timeline__img.cd-timeline__img--picture {
+  background: #fff; }
+
+.cd-timeline__img.cd-timeline__img--movie {
+  background: #fff; }
+
+.cd-timeline__img.cd-timeline__img--location {
+  background: #fff; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  .cd-timeline__img.cd-timeline__img--bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 0.6s;
+    animation: cd-bounce-1 0.6s; } }
+
+@-webkit-keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.cd-timeline__content {
+  position: relative;
+  margin-left: 60px;
+  background: #efefef;
+  border-radius: 0.25em;
+  padding: 1em;
+  -webkit-box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 0 #d7e4ed; }
+
+.cd-timeline__content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both; }
+
+.cd-timeline__content::before {
+  /* triangle next to content block */
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #efefef; }
+
+.cd-timeline__content h2 {
+  color: #303e49; }
+
+.cd-timeline__content p,
+.cd-timeline__read-more,
+.cd-timeline__date {
+  font-size: 1.3rem; }
+
+.cd-timeline__content p {
+  margin: 1em 0;
+  line-height: 1.6; }
+
+.cd-timeline__read-more,
+.cd-timeline__date {
+  display: inline-block; }
+
+.cd-timeline__read-more {
+  float: right;
+  padding: .8em 1em;
+  background: #acb7c0;
+  color: white;
+  border-radius: 0.25em; }
+
+.cd-timeline__read-more:hover {
+  background-color: #bac4cb; }
+
+.cd-timeline__date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7; }
+
+@media only screen and (min-width: 768px) {
+  .cd-timeline__content h2 {
+    font-size: 2rem; }
+  .cd-timeline__content p {
+    font-size: 1.6rem; }
+  .cd-timeline__read-more,
+  .cd-timeline__date {
+    font-size: 1.4rem; } }
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  .cd-timeline__content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #efefef; }
+  .cd-timeline__read-more {
+    float: left; }
+  .cd-timeline__date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 1.6rem; }
+  .cd-timeline__block:nth-child(even) .cd-timeline__content {
+    float: right; }
+  .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #efefef; }
+  .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
+    float: right; }
+  .cd-timeline__block:nth-child(even) .cd-timeline__date {
+    left: auto;
+    right: 122%;
+    text-align: right; }
+  .cd-timeline__content.cd-timeline__content--bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+    animation: cd-bounce-2 0.6s; } }
+
+@media only screen and (min-width: 1170px) {
+  /* inverse bounce effect on even content blocks */
+  .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
+    -webkit-animation: cd-bounce-2-inverse 0.6s;
+    animation: cd-bounce-2-inverse 0.6s; } }
+
+@-webkit-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@-webkit-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+</style> 
+
+	<script>document.getElementById('maincontent').classList.remove("page-main");</script>
+  	
+	<title>Encapsiscent Technology</title>
+</head>
+<body>
+	<section class="cd-facts">
+		<div class="cd-facts__container">
+			<div class="cd-header">
+		      <h1 class="text-highlighted">DOGS HAVE AMAZING NOSES</h1>
+		      <h4 class="text-white">Their noses are <b>10,000x more powerful</b> than a human’s. But they have 80% fewer taste buds. A dog’s brain craves scent.</h4><br>
+		      <ul class="cd-facts__list text-white">
+		      	<li class="cd-fact__bullet">Scent processing through a dog’s nasal passage is detected by <b>220 million scent receptors.</b></li>
+		      	<li class="cd-fact__bullet">In a dog’s brain the olfactory bulb is <b>three times the size of a human’s.</b></li>
+		      	<li class="cd-fact__bullet"><b>Dog noses are stereoscopic,</b> with one nostril identifying a smell, and one locating it.</li>
+		      </ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="cd-timeline js-cd-timeline">
+
+		<div class="cd-header">
+		      <h1 class="text-dark">ENCAPSISCENT TECHNOLOGY<sup> TM</sup></h1>
+		      <h4 class="text-dark">Dogs experience the world through scent. So, we embedded the all-natural scents that dogs love in each toy.</h4><br><br>
+		</div>
+
+		<div class="cd-timeline__container">
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+					<img src="img/SVG/embed.svg" alt="Embed">
+				</div> 
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>EMBED</h2>
+					<p>Our all-natural scents are embedded throughout the material of the toy at the microscopic level.</p>
+				</div> 
+			</div> 
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+					<img src="img/SVG/chew.svg" alt="Chew">
+				</div> 
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>CHEW</h2>
+					<p>As your dog chews, those tiny scent particles are released for their olfactory enjoyment, but barely enough for you to smell.</p>
+				</div> 
+			</div> 
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+					<img src="img/SVG/sniff.svg" alt="Sniff">
+				</div> 
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>SNIFF</h2>
+					<p>Dogs use their super powerful noses to enjoy the scent – what they really love – instead of relying on fattening treats.</p>
+				</div> 
+			</div> 
+
+			<div class="cd-timeline__block js-cd-block">
+				<div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+					<img src="img/SVG/repeat.svg" alt="Repeat">
+				</div> 
+
+				<div class="cd-timeline__content js-cd-content">
+					<h2>REPEAT</h2>
+					<p>Because we embed the scents directly into the material of each toy, your pooch will enjoy chewing and sniffing over and over again.</p>
+				</div> 
+			</div> 
+		</div>
+	</section> 
+
+	<section class="cd-video">
+		<div class="cd-video__container">
+			<div class="cd-header">
+				<h1 class="text-white">MEET NERD DOG</h1>
+				<h4 class="text-white">The in-house dog scientist behind Playology</h4>
+				<div class="cta cd-video__button button outline-light clickable">WATCH NOW</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cd-benefits">
+		<div class="cd-benefits__container">
+			<div class="cd-header">
+				<h1 class="text-white">MORE ABOUT OUR TOYS</h1>
+				<h4 class="text-white">Our scientists have put a lot of thought into the materials we use in our toys to make playtime more enjoyable and longer lasting.</h4>
+				<div class="cd-benefits__icons">
+					<div class="cd-benefits__single">
+						<div class="cd-benefits__icon"><img src="img/SVG/slobber-wicking.svg" alt="Slobber Wicking Technology" width="100"></div>
+						<h4 class="cd-benefits__header text-white"><b>SLOBBER WICKING</b></h4>
+						<p class="cd-benefits__description text-white">Similar to performance athletic wear, Playology<sup>TM</sup> Dri-Tech rope toys have specially shaped fibers that wick away slobber. Unlike cotton ropes, they don’t tear into long pieces that could block your dog’s digestive tract.</p>
+					</div>
+					<div class="cd-benefits__single">
+						<div class="cd-benefits__icon"><img src="img/SVG/durable.svg" alt="Durable Materials" width="180"></div>
+						<h4 class="cd-benefits__header text-white"><b>DURABLE</b></h4>
+						<p class="cd-benefits__description text-white">All Playology<sup>TM</sup> toys are made of high-quality materials and available in three strengths, Extra Durable, Durable, and Light Chewer, to appeal to all types of chewers.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="carousel" class="section carousel-section">
+		{{block class="Magento\Framework\View\Element\Template" title="Shop our bestsellers" category_id="24" auto_play="false" template="BigHippo_ProductCarousel::carousel.phtml" }}
+	</section>
+
+	<div class="vimeo-lightbox hidden">
+		<icon class="exit clickable"><img src="img/SVG/X.svg" width="25" alt=""></icon>
+			<div id="encapsiscent-video"></div>		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		var w = window.innerWidth;
+		var mw = w - Math.round((w/8));
+		console.log(mw);
+
+	    var options = {
+	        id: 240186422,
+	        width: mw,
+	        loop: true
+	    };
+
+		var encapsiscentPlayer = new Vimeo.Player('encapsiscent-video', options);
+		encapsiscentPlayer.on('play', function(){
+			console.log('played the encapsiscent-video');
+		})
+		encapsiscentPlayer.play();
+	</script>
+
+	<script>
+		$(function() {                       //run when the DOM is ready
+		  $(".clickable").click(function() {  //use a class, since your ID gets mangled
+		    $(".vimeo-lightbox").toggleClass("hidden");      //add the class to the clicked element
+		  });
+		});
+	</script>
+
+	<script></script>
+
+</body>
+</html>

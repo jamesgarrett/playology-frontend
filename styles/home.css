@@ -559,6 +559,10 @@ a {
   background-position: center;
   background-attachment: fixed; }
 
+@media only screen and (max-width: 768px) {
+  .cd-nose, .cd-engagement, .cd-hero, .cd-safety {
+    background-attachment: scroll; } }
+
 .cd-engagement__container, .cd-safety__container, .cd-nose__container {
   width: 50%;
   height: 100vh; }
@@ -587,7 +591,7 @@ a {
 .cd-hero .action.scroll-down {
   display: inline-block;
   text-decoration: none;
-  bottom: 100px;
+  bottom: 40px;
   cursor: pointer;
   left: 50%;
   line-height: normal;

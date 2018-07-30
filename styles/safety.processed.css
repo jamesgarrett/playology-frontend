@@ -706,8 +706,8 @@ body {
 
 /* DOG OBSESSED */
 .cd-hero {
-  background: #efefef;
-  padding: 44px 0px; }
+  padding: 44px 0px;
+  background: #efefef; }
   .cd-hero h1 sup {
     line-height: 5.45rem !important; }
   .cd-hero .cd-hero_founder-img {
@@ -728,7 +728,7 @@ body {
     display: block; } }
 
 @media only screen and (max-width: 767px) {
-  .cd-hero_founder-img {
+  .desktop {
     display: none; } }
 
 /* DOG SAFE MATERIALS */
@@ -756,6 +756,10 @@ body {
       text-align: center;
       margin-left: 5%;
       width: 90%; }
+      .cd-natural .cd-natural__container .cd-header div.cd-scents {
+        min-width: auto; }
+        .cd-natural .cd-natural__container .cd-header div.cd-scents span {
+          padding: 10px 15px; }
   .cd-natural {
     background-position: 30%;
     background-attachment: scroll; } }
@@ -877,6 +881,23 @@ h2 {
 .breadcrumbs,
 .page-title-wrapper {
   display: none !important; }
+
+.cd-header {
+  padding: 20px 10px;
+  text-align: center; }
+  .cd-header h1 {
+    font-size: 2.4rem; }
+  .cd-header h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 0 auto; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-header h1 {
+    font-size: 4.5rem; }
+  .cd-header h4 {
+    font-size: 2.5rem; } }
 
 /* -------------------------------- 
 Patterns - reusable parts of our design

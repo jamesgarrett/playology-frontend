@@ -582,6 +582,13 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/safety-svg.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/safety-svg.min.html",
+		"oF": 0
+		},
 	"\/safety.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -589,11 +596,53 @@
 		"oAP": "\/safety.html",
 		"oF": 0
 		},
+	"\/safety.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/safety.min.html",
+		"oF": 0
+		},
+	"\/science-prod.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science-prod.html",
+		"oF": 0
+		},
 	"\/science.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/science.html",
+		"oF": 0
+		},
+	"\/science.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science.min.html",
+		"oF": 0
+		},
+	"\/science.svg.min.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science.svg.min.html",
+		"oF": 0
+		},
+	"\/science.vimeo-iframe.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science.vimeo-iframe.html",
+		"oF": 0
+		},
+	"\/science.vimeo-js.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/science.vimeo-js.html",
 		"oF": 0
 		},
 	"\/scripts\/doggo-min.js": {

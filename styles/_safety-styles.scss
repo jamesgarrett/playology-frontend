@@ -51,8 +51,8 @@
 /* DOG OBSESSED */
 
 .cd-hero{
-	background:#efefef;
 	padding:44px 0px;
+	background:#efefef;
 	h1 sup{
 		line-height: 5.45rem !important;
 	}
@@ -81,7 +81,7 @@
 }
 
 @media only screen and (max-width: 767px){
-	.cd-hero_founder-img{
+	.desktop{
 		display:none;
 	}
 }
@@ -116,13 +116,21 @@
 				text-align: center;
 				margin-left: 5%;
 				width:90%;
+					div.cd-scents{
+						min-width:auto;
+						span{
+							padding:10px 15px;
+						}
+					}
 			}
+
 		}
 	}
 	.cd-natural{
 		background-position: 30%;
 		background-attachment: scroll;
 	}
+
 }
 
 .cd-natural__container{

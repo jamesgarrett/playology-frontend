@@ -53,32 +53,40 @@
     padding-bottom: .9rem; } }
 
 .cd-video__container {
-  background: url('{{media url="wysiwyg/science-page/nerd-dog.png"}}');
+  background: url("https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/nerd-dog.png");
   background-position: top center;
   background-size: cover;
   height: 650px; }
   .cd-video__container .cd-header {
     padding-top: 200px; }
-  .cd-video__container a.cd-video__button {
+  .cd-video__container div.cd-video__button {
     margin-top: 2.4rem; }
+
+.hidden {
+  display: none; }
 
 .vimeo-lightbox {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   top: 0; }
-  .vimeo-lightbox div {
-    max-width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translateY(-50%);
-    transform: translateX(-50%); }
+  .vimeo-lightbox .wrapper {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%; }
+    .vimeo-lightbox .wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .vimeo-lightbox .exit {
     position: fixed;
-    top: 15px;
-    right: 15px; }
+    top: 25px;
+    right: 25px;
+    z-index: 999999; }
     .vimeo-lightbox .exit .cls-1 {
       fill: #efefef; }
       .vimeo-lightbox .exit .cls-1:hover {

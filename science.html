@@ -18,7 +18,7 @@
 		<div class="cd-facts__container">
 			<div class="cd-header">
 		      <h1 class="text-highlighted">DOGS HAVE AMAZING NOSES</h1>
-		      <h4 class="text-white">Dogs have 80% fewer taste buds than humans. But their noses are <b>10,000x more powerful</b></h4><br>
+		      <h4 class="text-white">Their noses are <b>10,000x more powerful</b> than a human’s. But they have 80% fewer taste buds. A dog’s brain craves scent.</h4><br>
 		      <ul class="cd-facts__list text-white">
 		      	<li class="cd-fact__bullet">Scent processing through a dog’s nasal passage is detected by <b>220 million scent receptors.</b></li>
 		      	<li class="cd-fact__bullet">In a dog’s brain the olfactory bulb is <b>three times the size of a human’s.</b></li>
@@ -38,7 +38,7 @@
 		<div class="cd-timeline__container">
 			<div class="cd-timeline__block js-cd-block">
 				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-					<img src="img/SVG/embed.svg" alt="Embed">
+					<img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/embed.svg" alt="Embed">
 				</div> <!-- cd-timeline__img -->
 
 				<div class="cd-timeline__content js-cd-content">
@@ -49,7 +49,7 @@
 
 			<div class="cd-timeline__block js-cd-block">
 				<div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
-					<img src="img/SVG/chew.svg" alt="Chew">
+					<img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/chew.svg" alt="Chew">
 				</div> <!-- cd-timeline__img -->
 
 				<div class="cd-timeline__content js-cd-content">
@@ -60,7 +60,7 @@
 
 			<div class="cd-timeline__block js-cd-block">
 				<div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-					<img src="img/SVG/sniff.svg" alt="Sniff">
+					<img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/sniff.svg" alt="Sniff">
 				</div> <!-- cd-timeline__img -->
 
 				<div class="cd-timeline__content js-cd-content">
@@ -71,7 +71,7 @@
 
 			<div class="cd-timeline__block js-cd-block">
 				<div class="cd-timeline__img cd-timeline__img--location js-cd-img">
-					<img src="img/SVG/repeat.svg" alt="Repeat">
+					<img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/repeat.svg" alt="Repeat">
 				</div> <!-- cd-timeline__img -->
 
 				<div class="cd-timeline__content js-cd-content">
@@ -87,7 +87,7 @@
 			<div class="cd-header">
 				<h1 class="text-white">MEET NERD DOG</h1>
 				<h4 class="text-white">The in-house dog scientist behind Playology</h4>
-				<a class="cta cd-video__button button outline-light" href="https://vimeo.com/240186422">WATCH NOW</a>
+				<div class="cta cd-video__button button outline-light clickable">WATCH NOW</div>
 			</div>
 		</div>
 	</section>
@@ -99,12 +99,12 @@
 				<h4 class="text-white">Our scientists have put a lot of thought into the materials we use in our toys to make playtime more enjoyable and longer lasting.</h4>
 				<div class="cd-benefits__icons">
 					<div class="cd-benefits__single">
-						<div class="cd-benefits__icon"><img src="img/SVG/slobber-wicking.svg" alt="Slobber Wicking Technology" width="100"></div>
+						<div class="cd-benefits__icon"><img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/slobber-wicking.svg" alt="Slobber Wicking Technology" width="100"></div>
 						<h4 class="cd-benefits__header text-white"><b>SLOBBER WICKING</b></h4>
 						<p class="cd-benefits__description text-white">Similar to performance athletic wear, Playology<sup>TM</sup> Dri-Tech rope toys have specially shaped fibers that wick away slobber. Unlike cotton ropes, they don’t tear into long pieces that could block your dog’s digestive tract.</p>
 					</div>
 					<div class="cd-benefits__single">
-						<div class="cd-benefits__icon"><img src="img/SVG/durable.svg" alt="Durable Materials" width="180"></div>
+						<div class="cd-benefits__icon"><img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/durable.svg" alt="Durable Materials" width="180"></div>
 						<h4 class="cd-benefits__header text-white"><b>DURABLE</b></h4>
 						<p class="cd-benefits__description text-white">All Playology<sup>TM</sup> toys are made of high-quality materials and available in three strengths, Extra Durable, Durable, and Light Chewer, to appeal to all types of chewers.</p>
 					</div>
@@ -116,7 +116,39 @@
 	<section id="carousel" class="section carousel-section">
 		{{block class="Magento\Framework\View\Element\Template" title="Shop our bestsellers" category_id="24" auto_play="false" template="BigHippo_ProductCarousel::carousel.phtml" }}
 	</section>
-	
-<script src="scripts/index.js"></script> <!-- Resource JavaScript -->
+
+	<div class="vimeo-lightbox hidden">
+		<span class="exit"><img src="https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/science-page/SVG/X.svg" width="25" alt=""></span>
+		<div id="encapsiscent-video" ></div>		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script>
+		var w = window.innerWidth;
+		var mw = w - Math.round((w/8));
+
+	    var options = {
+	        id: 240186422,
+	        width: mw,
+	        loop: true
+	    };
+
+		var encapsiscentPlayer = new Vimeo.Player('encapsiscent-video', options);
+		encapsiscentPlayer.play();
+	</script>
+
+	<script>
+		$(function() {                       //run when the DOM is ready
+		  $(".clickable").click(function() {  //use a class, since your ID gets mangled
+		    $(".vimeo-lightbox").toggleClass("hidden");      //add the class to the clicked element
+		  });
+		});
+	</script>
+
+	<script src="scripts/index.js"></script>
+
 </body>
 </html>

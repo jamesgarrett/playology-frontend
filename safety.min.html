@@ -1,0 +1,1024 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementById('maincontent').classList.remove("page-main");</script>
+  
+  
+  <style>/**
+ * index.scss
+ */
+@media only screen and (max-width: 1023px) {
+  .navigation {
+    padding: 0; }
+  .navigation .parent .level-top {
+    position: relative;
+    display: block;
+    text-decoration: none; }
+  .navigation .parent .level-top:after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 42px;
+    line-height: inherit;
+    color: inherit;
+    content: "\e586";
+    font-family: 'playology-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center; }
+  .navigation .parent .level-top:after {
+    position: absolute;
+    right: 7px;
+    top: -8px; }
+  .navigation .parent .level-top.ui-state-active:after {
+    content: "\e585"; }
+  .nav-sections {
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: left .3s;
+    transition: left .3s;
+    height: 100%;
+    left: -80%;
+    left: calc(-1 * (100% - 54px));
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    width: calc(100% - 54px); }
+  .nav-sections .switcher {
+    border-top: 1px solid #d1d1d1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    padding: .8rem 3.5rem .8rem 2rem; }
+  .nav-sections .switcher .label {
+    display: block;
+    margin-bottom: 5.5px; }
+  .nav-sections .switcher:last-child {
+    border-bottom: 1px solid #d1d1d1; }
+  .nav-sections .switcher-trigger strong {
+    position: relative;
+    display: block;
+    text-decoration: none; }
+  .nav-sections .switcher-trigger strong:after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 42px;
+    line-height: inherit;
+    color: inherit;
+    content: "\e586";
+    font-family: 'playology-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center; }
+  .nav-sections .switcher-trigger strong:after {
+    position: absolute;
+    right: -40px;
+    top: -16px; }
+  .nav-sections .switcher-trigger.active strong:after {
+    content: "\e585"; }
+  .nav-sections .switcher-dropdown {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+    padding: 11px 0; }
+  .nav-sections .header.links {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+    border-bottom: 1px solid #d1d1d1; }
+  .nav-sections .header.links li {
+    font-size: 1.6rem;
+    margin: 0; }
+  .nav-sections .header.links li.greet.welcome {
+    border-top: 1px solid #d1d1d1;
+    font-weight: 700;
+    padding: .8rem 22px; }
+  .nav-sections .header.links li > a {
+    border-top: 1px solid #d1d1d1; }
+  .nav-sections .header.links a, .nav-sections .header.links a:hover {
+    color: #404040;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    padding: .8rem 22px; }
+  .nav-sections .header.links .header.links {
+    border: 0; }
+  .nav-before-open {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%; }
+  .nav-before-open .page-header, .nav-before-open .page-wrapper {
+    -webkit-transition: left .3s;
+    transition: left .3s; }
+  .nav-before-open .page-wrapper {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: relative; }
+  .nav-before-open body {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+  .nav-open .nav-sections {
+    -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+    -ms-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+    left: 0;
+    z-index: 99; }
+  .nav-open .header.content > .nav-toggle::after {
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    display: block;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+  .nav-sections-items {
+    position: relative;
+    z-index: 1; }
+  .nav-sections-items:before, .nav-sections-items:after {
+    content: '';
+    display: table; }
+  .nav-sections-items:after {
+    clear: both; }
+  .nav-sections-item-title {
+    background: #e3e3e3;
+    border: solid #d7d7d7;
+    border-width: 0 0 1px 1px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    height: 71px;
+    padding-top: 24px;
+    text-align: center;
+    width: 33.33%; }
+  .nav-sections-item-title.active {
+    background: transparent;
+    border-bottom: 0; }
+  .nav-sections-item-title.active .nav-sections-item-switch {
+    color: #404040;
+    font-weight: 600; }
+  .nav-sections-item-title .nav-sections-item-switch:hover {
+    text-decoration: none; }
+  .nav-sections-item-content {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: right;
+    margin-left: -100%;
+    margin-top: 71px;
+    width: 100%;
+    padding: 27.5px 0; }
+  .nav-sections-item-content:before, .nav-sections-item-content:after {
+    content: '';
+    display: table; }
+  .nav-sections-item-content:after {
+    clear: both; }
+  .nav-sections-item-content.active {
+    display: block; }
+  .navigation {
+    background: #f0f0f0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .navigation ul {
+    margin: 0;
+    padding: 0; }
+  .navigation li {
+    margin: 0; }
+  .navigation a {
+    display: block;
+    padding-top: 11px;
+    padding-right: 0;
+    padding-bottom: 11px;
+    padding-left: 15px; }
+  .navigation a, .navigation a:hover {
+    color: #404040;
+    text-decoration: none; }
+  .navigation .level0 {
+    font-size: 1.6rem; }
+  .navigation .level0 > .level-top {
+    font-weight: 700;
+    padding: 8px 44px 8px 15px;
+    text-transform: uppercase;
+    word-wrap: break-word; }
+  .navigation .level0.active .all-category .ui-state-focus {
+    border-color: #ffec00;
+    border-style: solid;
+    border-width: 0 0 0 8px;
+    color: #404040;
+    padding-left: 7px;
+    display: inline-block; }
+  .navigation .level0 > .level1 {
+    font-weight: 600; }
+  .navigation .level0.active > a:not(.ui-state-active), .navigation .level0.has-active > a:not(.ui-state-active) {
+    border-color: #ffec00;
+    border-style: solid;
+    border-width: 0 0 0 8px;
+    color: #404040; }
+  .navigation .level0.active > a:not(.ui-state-active) span:not(.ui-menu-icon),
+  .navigation .level0.has-active > a:not(.ui-state-active) span:not(.ui-menu-icon) {
+    margin-left: -8px; }
+  .navigation .submenu > li {
+    word-wrap: break-word; }
+  .navigation .submenu:not(:first-child) {
+    font-weight: 400;
+    line-height: 1.3;
+    left: auto !important;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+    top: auto !important;
+    -webkit-transition: left .3s ease-out;
+    transition: left .3s ease-out; }
+  .navigation .submenu:not(:first-child) > li > a {
+    padding-left: 15px; }
+  .navigation .submenu:not(:first-child) > li:last-child {
+    margin-bottom: 0; }
+  .navigation .submenu:not(:first-child) ul {
+    display: block;
+    padding-left: 15px; }
+  .navigation .submenu:not(:first-child) ul > li {
+    margin: 0; }
+  .navigation .submenu:not(:first-child) ul > li a {
+    color: #575757;
+    display: block;
+    line-height: normal; }
+  .navigation .submenu:not(:first-child).expanded {
+    display: block !important;
+    padding-right: 0;
+    top: 0 !important; }
+  .navigation .submenu:not(:first-child) .active > a {
+    border-color: #ffec00;
+    border-style: solid;
+    border-width: 0 0 0 8px;
+    color: #404040;
+    padding-left: 7px; }
+  .navigation .submenu:not(:first-child) .level1.active > a {
+    padding-left: 7px; }
+  .navigation .nav-main-menu li > a {
+    color: #404040; }
+  .navigation .nav-main-menu .dropdown .toggle-menu a {
+    display: inline-block;
+    text-decoration: none;
+    display: block;
+    padding: 0; }
+  .navigation .nav-main-menu .dropdown .toggle-menu a:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    content: "\e586";
+    font-family: 'playology-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center; }
+  .navigation .nav-main-menu .dropdown .toggle-menu a.active:before {
+    content: "\e585"; }
+  .navigation .nav-main-menu .dropdown .toggle-menu a .fa {
+    display: none; }
+  .navigation .nav-main-menu .dropdown-menu {
+    display: none; }
+  .navigation .level0.active > a:not(.ui-state-active), .navigation .level0.has-active > a:not(.ui-state-active) {
+    border-color: transparent; }
+  .field-tooltip .field-tooltip-content {
+    right: -11px;
+    top: 40px;
+    left: auto; }
+  .field-tooltip .field-tooltip-content:before, .field-tooltip .field-tooltip-content:after {
+    border: 10px solid transparent;
+    height: 0;
+    width: 0;
+    margin-top: -21px;
+    right: 11px;
+    left: auto;
+    top: 0; }
+  .field-tooltip .field-tooltip-content:before {
+    border-bottom-color: #666; }
+  .field-tooltip .field-tooltip-content:after {
+    border-bottom-color: #f4f4f4;
+    top: 1px; } }
+
+.swatch-attribute-label {
+  font-weight: bold;
+  position: relative; }
+
+.swatch-attribute-label.required {
+  padding-right: 10px; }
+
+.swatch-attribute-label[data-required="1"]:after {
+  content: '*';
+  color: red;
+  position: absolute;
+  right: -11px;
+  top: -2px;
+  font-weight: bold;
+  font-size: 1em; }
+
+.swatch-attribute-selected-option {
+  color: #646464;
+  padding-left: 17px; }
+
+.swatch-attribute-options {
+  margin-top: 10px; }
+
+.swatch-attribute-options:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.swatch-option {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  max-width: 90px;
+  float: left;
+  height: 20px;
+  margin-right: 6px;
+  min-width: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis; }
+
+.swatch-option.text {
+  background: #fff;
+  border: 1px solid #979797;
+  color: #979797;
+  font-size: 10px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 25px;
+  min-width: 25px; }
+
+.swatch-option.selected, .swatch-option:not(.disabled):hover {
+  border-color: #979797; }
+
+.swatch-option.text.selected, .swatch-option.text:not(.disabled):hover {
+  background-color: #979797 !important;
+  color: #f1f1f1; }
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.swatch-option.disabled {
+  cursor: default; }
+
+.swatch-option.disabled:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(42%, rgba(255, 255, 255, 0)), color-stop(43%, white), color-stop(46%, white), color-stop(47%, #ff5216), color-stop(53%, #ff5216), color-stop(54%, white), color-stop(57%, white), color-stop(58%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, white 43%, white 46%, #ff5216 47%, #ff5216 53%, white 54%, white 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%); }
+
+.swatch-option-tooltip {
+  border-radius: 10px;
+  color: #949494;
+  display: none;
+  max-height: 100%;
+  max-width: 140px;
+  min-height: 20px;
+  min-width: 20px;
+  position: absolute;
+  text-align: center;
+  z-index: 99; }
+
+.swatch-option-tooltip .corner,
+.swatch-option-tooltip-layered .corner {
+  left: 40%;
+  position: absolute;
+  bottom: 0;
+  height: 8px; }
+
+.swatch-option-tooltip .corner:after,
+.swatch-option-tooltip-layered .corner:after {
+  content: '';
+  position: relative;
+  top: -2px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #fff transparent transparent transparent;
+  font-size: 1px; }
+
+.swatch-option-tooltip .corner:before,
+.swatch-option-tooltip-layered .corner:before {
+  content: '';
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #cacaca transparent transparent transparent;
+  font-size: 1px; }
+
+.swatch-option-tooltip .image,
+.swatch-option-tooltip-layered .image {
+  border-radius: 10px 10px 0 0;
+  display: block;
+  height: 75px;
+  margin: 0 auto;
+  width: 78px; }
+
+.swatch-option-tooltip .title {
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-radius: 0 0 10px 10px;
+  color: #404040;
+  display: block;
+  max-width: 140px;
+  min-height: 20px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center; }
+
+.swatch-opt {
+  margin: 20px 0; }
+
+.swatch-more {
+  display: inline-block;
+  margin: 2px 0;
+  text-decoration: none !important;
+  position: static;
+  z-index: 1; }
+
+.swatch-option-link-layered {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.swatch-option-link-layered:focus > div {
+  -webkit-box-shadow: 0 0 3px 1px #68a8e0;
+          box-shadow: 0 0 3px 1px #68a8e0; }
+
+.swatch-option-tooltip-layered {
+  width: 140px;
+  position: absolute;
+  background: #fff;
+  color: #949494;
+  border: 1px solid #adadad;
+  display: none;
+  z-index: 999;
+  left: -47px; }
+
+.swatch-visual-tooltip-layered {
+  height: 160px;
+  top: -170px; }
+
+.swatch-textual-tooltip-layered {
+  height: 30px;
+  top: -40px; }
+
+.swatch-option-link-layered:hover > .swatch-option-tooltip-layered {
+  display: block; }
+
+.swatch-attribute-options .swatch-option-tooltip-layered .title {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  color: #282828;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.swatch-option-disabled:after {
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 2px;
+  background: red;
+  transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  z-index: 995;
+  left: -4px;
+  top: 10px; }
+
+.swatch-option-disabled {
+  cursor: default;
+  border: 0; }
+
+.swatch-opt-listing {
+  margin-bottom: 10px; }
+
+.swatch-option-loading {
+  content: url('data:image/gif;base64,R0lGODlh2gCVAPMAAP///7Ozs9bW1uHh4bq6uoGBgTQ0NAEBARsbG8TExJeXl1RUVAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBQAAACwAAAAA2gCVAEAE/xDISau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru987//AoHBILBqPyKRyyfwYEIiC5ECVBK6DpnYbu3oDhCx3vEx8CRtBYDIgeAXkuHYAp7jR8rx+z+/7/4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucgAFSFFQHFGZrnY4LBqoGC3UbZ2Knp66ykG4BdV4Tt7S1vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3N3e3+Dh4uM+CgcK5E1QCKYAortXvek6AaroEwtQoBQD7W1v83goUNUuTUAeBRIqTAjiy5UwB3OowdXhFphYEWn0ozihFBxdAOa8YMzY41YskBJKkVzJsqXLlzBjypxJs6bNmzhz6tzJs6fPn0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KtarVq1izat3KtavXr0QQHEBQQcDIqQOgLAhVRcJGPFcLQDEw4R2AiXCxBliX5d3EBBQmnj06UNUCUwkQ3MtQ6grgpwFSreowUR7UAfu+JlCwkOEHhw+Vbu6cGawFyxcqo7WYV0PjAI+ZTrw4IcDZv4HdDG660RRIvFqBW7nCBqVVxxSM392NtQ1z09CjS59Ovbr169iza9/Ovbv37+DDix9Pvrz58+jTq3caAQAh+QQFBQAAACxdADoAGAAXAEAEdxDISSsKdYpSSDVGBihHIhFBqmJiK4KGJyH0hBxHURGc6f7AIEVhqU0MuNYCRATQEAAB7tAEBDgcxUDI7XqFvu/PgAhRClUKqAiVkA7tigK0sBkLuPhr7awtcGYAPFgCEgIGLEIbWDpiE4lCAygrkEGSlJWOmpoRACH5BAUFAAAALF4AOgAdAA4AQAR4EMhJZzA1zxGIoEpRBBoyKcihFplYfJIhTwZiapMQBDBOLT2cgFCRYSYLmw8kIgKMgIENQaIMJIndLrGkqFTU7s+wyFSXovNzJgnYjkuCi8YGvMUSwXyNKdjKEwUqCjo7BFdRBVw+CQZfB3ADBFpOXYIHLD5BeBURACH5BAUFAAAALGQAOgAZABEAQARoEMgJUkk0a5lCEFpggICInFuaHWyLKF4wTEU9LYahqHxWzJoBiWaj5FQED6lWkOQMvajkdIJKUy3XTqMobCffUABDbE6OKYGHUJYocgveICZhOq2UUyDz6S2oCHETe1EKKFeIiRNZWREAIfkEBQUAAAAsawA6ABIAGABABGJQKAGqvRinMuwyoJJlSGkagaJaRUuMcCwDR30gYqXmegvvlVaBMsOAQItXEWA6zYbLiwJhKwBSGQIxA6wIhL8VgAAOiwItHkABmlGOhmUoSsc0m/VnzbpMGGwHcVEFNQEAEQAh+QQFBQAAACxrADoAEgAeAEAEgnCQAaq9GItgRfkFkWVGaS7ZcKzKCASwFShK4t7cPSI8YuQ3w4qCgQFfNJexQmvpRqCP4GkxnY4joq5wsL0MvRtiVRgRAqKLd7S00LCyGCDRxMXoiiNBqhsook43CR9pVIYjVlaHhgo8iwILPQgoGQsrBhhgLlwHCIsBKweLAAWBFxEAIfkEBQUAAAAsbAA7ABEAHwBABHoQyAnEoDiDFHpIWogd5IQghjgJHaG+8GTMqUQeWQAP7ct+lN8l9BPEJIWkMhkKzBSiwmlBgdZulBNCozhAjxiODkboGF+e4UsNGJTNIk+AwCaCkcuCAhTK6/l3GjQGVCEKWxMLNFBYAFpjGY0ABichkgALlRkIB4gwEQAh+QQFBQAAACxlAEgAGAASAEAEahDISSsIOJNhbTCCJBRkQQBKURmI0b2w9yLHoQJIPi2GocRASUbDCUpKpBDFUFvgdICea1b7SXKI1dT4Gmq44FiCdApPBqmSVZKwdXoVQlKiqB04WHrP2SnUsldQElIdNVtPgBNrQQGJQREAIfkEBQUAAAAsXwBMAB0ADgBABHMQyEmrBeJag9A04KQUBXEZR3oYiSYlxSANRGBnVWAtxuJqhVThN6nZCDKAQkhZdIYgg4RUwBE5CJ0kShkNfwIfUSK4WQII1WH8stlawRRCQZ6fSfSJoCZLTtAdWyEABFRsAB1SgooYhkQdYosVBFaHH4cRACH5BAUFAAAALF0ASQAZABEAQARmUKFDK7g4a426Cdi3CUGQbGiWFGeqDYUra4phLFihY0MZSBXLTGbodIZIm+GiiwFIAYLLpmlqBINgEMntojoK72VhROBkJE3gqKECrADfQLawhd+7C6EkmC5zeRcJJS53GAoFhhkRACH5BAUFAAAALF4AQgARABgAQARbMJxTgL04642NUZhSFAEQnFgxVVymeO02FsJ1lsY0GUns/0APrAa0zAiW20ZQwhACBNUEAfopELpDUcAqer9gwkJoaL08i8ug0PtxR0mUJgqPNzOju0n+GxAGEQAh+QQFBQAAACxdADwADgAdAEAEbRDICVShc6GNlsBgKEpEEHwichzXOFpFrAyuNKDjegQYYmCG1SK0UQANyOSvRoglQIIYgZIw4TClAE20Wo4KK0RNocNxDDxAgoUJGDhi17a9UCJBgbq9NkmHojExIE0yTxJaciZ+UCZTIyaGABEAOw=='); }
+
+.swatch-input {
+  left: -1000px;
+  position: absolute;
+  visibility: hidden; }
+
+/**
+ * Carousel.sass
+ * @author: Dang Van Thanh
+ * @github: https://github.com/dangvanthanh/carousel.sass
+ * @description: A Simple Carousel Pure CSS Using Sass
+ * @version: 1.0.0
+ */
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background: #fcfcfc;
+  margin: 0; }
+
+.container {
+  width: 300px;
+  min-width: 300px;
+  margin: 50px auto; }
+
+.css-carousel-container {
+  width: 350px;
+  min-width: 350px;
+  margin: 50px auto; }
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-left: 0px; }
+  .carousel > input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0; }
+    .carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+    .carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+    .carousel > input[type="radio"]:checked ~ .carousel__next > label {
+      opacity: 0; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+  .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 350px;
+    position: relative; }
+  .carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; }
+    .carousel__item img {
+      width: 100%;
+      vertical-align: middle; }
+  .carousel__prev > label, .carousel__next > label {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    opacity: 0;
+    z-index: 2; }
+    .carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+      opacity: .5 !important; }
+    .carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+      content: "";
+      position: absolute;
+      width: inherit;
+      height: inherit; }
+    .carousel__prev > label:before, .carousel__next > label:before {
+      background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
+      background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+      width: 60%;
+      height: 60%;
+      top: 20%; }
+  .carousel__prev > label {
+    left: 2%; }
+    .carousel__prev > label:before {
+      left: 35%;
+      top: 20%;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg); }
+  .carousel__next > label {
+    right: 2%; }
+    .carousel__next > label:before {
+      left: 10%;
+      transform: rotate(315deg);
+      -webkit-transform: rotate(315deg); }
+  .carousel__nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3; }
+    .carousel__nav > label {
+      border: 2px solid #fff;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 .125%;
+      width: 20px;
+      height: 20px; }
+
+/* GENERAL */
+.cd-header {
+  text-align: center;
+  margin: auto 2rem; }
+  .cd-header h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2rem; }
+
+.cd-nose, .cd-natural, .cd-hero, .cd-safety {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.cd-natural__container, .cd-safety__container {
+  width: 50%;
+  height: 100vh; }
+
+.heading-hero {
+  font-weight: 700; }
+
+.cd-content__container {
+  text-align: center; }
+  .cd-content__container h1, .cd-content__container h2, .cd-content__container h3, .cd-content__container h4, .cd-content__container h5, .cd-content__container h6 {
+    margin: 0 auto; }
+  .cd-content__container .cta.button, .cd-content__container .cta.button.outline-light {
+    margin-top: 5vh; }
+
+@media only screen and (max-width: 640px) {
+  .cd-content__container .heading-hero {
+    font-size: 4.5rem; }
+  .cd-content__container .subheading {
+    font-size: 3.5rem; } }
+
+/* DOG OBSESSED */
+.cd-hero {
+  background: #efefef;
+  padding: 44px 0px; }
+  .cd-hero h1 sup {
+    line-height: 5.45rem !important; }
+  .cd-hero .cd-hero_founder-img {
+    margin-bottom: 2.5rem; }
+    .cd-hero .cd-hero_founder-img img {
+      height: 300px;
+      margin: 1rem; }
+  .cd-hero .cd-hero__description {
+    max-width: 768px;
+    margin: 0 auto;
+    font-size: 1.5rem; }
+
+.css-carousel-container {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .css-carousel-container {
+    display: block; } }
+
+@media only screen and (max-width: 767px) {
+  .cd-hero_founder-img {
+    display: none; } }
+
+/* DOG SAFE MATERIALS */
+.cd-dog-safe {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+/* NATURAL SCENTS */
+@media only screen and (max-width: 968px) {
+  .cd-natural .cd-natural__container {
+    width: 65%;
+    margin-left: 35%; } }
+
+@media only screen and (max-width: 768px) {
+  .cd-natural .cd-natural__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.6); }
+    .cd-natural .cd-natural__container .cd-header {
+      text-align: center;
+      margin-left: 5%;
+      width: 90%; }
+      .cd-natural .cd-natural__container .cd-header div.cd-scents {
+        min-width: auto; }
+        .cd-natural .cd-natural__container .cd-header div.cd-scents span {
+          padding: 10px 15px; }
+  .cd-natural {
+    background-position: 30%;
+    background-attachment: scroll; } }
+
+.cd-natural__container {
+  position: relative;
+  margin-left: 50%; }
+  .cd-natural__container .cd-header {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-right: 25%; }
+    .cd-natural__container .cd-header .cd-scents {
+      font-weight: 700;
+      margin: 2.5rem auto;
+      min-width: 427px; }
+      .cd-natural__container .cd-header .cd-scents span {
+        padding: 10px 35px;
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: #222 !important;
+        cursor: pointer; }
+      .cd-natural__container .cd-header .cd-scents :first-child {
+        background-color: yellow; }
+        .cd-natural__container .cd-header .cd-scents :first-child:hover {
+          background-color: #ffff9d; }
+      .cd-natural__container .cd-header .cd-scents :nth-child(2) {
+        background-color: #222;
+        color: white !important; }
+        .cd-natural__container .cd-header .cd-scents :nth-child(2) a {
+          color: white; }
+        .cd-natural__container .cd-header .cd-scents :nth-child(2):hover {
+          background-color: #6f6e6e; }
+      .cd-natural__container .cd-header .cd-scents :nth-child(3) {
+        background-color: red;
+        margin-right: 5px; }
+        .cd-natural__container .cd-header .cd-scents :nth-child(3):hover {
+          background-color: #ff9999; }
+      .cd-natural__container .cd-header .cd-scents a {
+        background-color: transparent !important;
+        color: #222; }
+
+/* BENEFITS */
+.cd-benefits {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.cd-benefits__container, .cd-hero__container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-size: 50%;
+  background-position: right center; }
+
+.cd-benefits__icons {
+  width: 100%; }
+
+.cd-benefits__single {
+  width: 100%;
+  display: inline-block;
+  padding: 35px;
+  vertical-align: top; }
+  .cd-benefits__single sup {
+    font-size: .5rem; }
+  .cd-benefits__single .cd-benefits__icon img {
+    height: 150px; }
+
+@media only screen and (min-width: 768px) {
+  .cd-benefits__single {
+    width: 50%; }
+  .cd-benefits__container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; } }
+
+@media only screen and (min-width: 1170px) {
+  .cd-benefits__single {
+    width: 25%; }
+  .cd-benefits__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+
+/* -------------------------------- 
+Primary style
+-------------------------------- */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  color: #7f8c97;
+  background-color: #fff;
+  margin: 0; }
+
+a {
+  color: #acb7c0;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold; }
+
+.breadcrumbs,
+.page-title-wrapper {
+  display: none !important; }
+
+/* -------------------------------- 
+Patterns - reusable parts of our design
+-------------------------------- */
+@media only screen and (min-width: 1170px) {
+  .cd-is-hidden {
+    visibility: hidden; }
+  .breadcrumbs,
+  .page-title-wrapper {
+    display: block; }
+  h1 sup {
+    line-height: 3.6 !important; } }
+
+.text-white {
+  color: white !important; }
+
+.text-dark {
+  color: #222 !important; }
+
+.text-bold {
+  font-weight: 700; }
+
+h1 sup {
+  font-size: small;
+  vertical-align: text-top;
+  line-height: 2.2; }
+
+/* -------------------------------- 
+IMPORTED FROM TALOS
+-------------------------------- */
+</style>  
+</head>
+
+<body>
+  <section class="cd-hero">
+    <div class="cd-hero__container cd-content__container">
+      <div class="cd-header" style="position:relative;">
+              <h1 class="heading-hero text-dark">PLAYOLOGY<sup> TM</sup> WAS FOUNDED BY DOG LOVERS</h1>
+            <h3 class="subheading text-dark">We are obsessed with dogs.</h3><br>
+            <div class="css-carousel-container mobile">
+              <ul class="carousel">
+            <input type="radio" id="carousel-1" name="carousel[]" checked>
+            <input type="radio" id="carousel-2" name="carousel[]">
+              <input type="radio" id="carousel-3" name="carousel[]">
+                <ul class="carousel__items">
+                  <li class="carousel__item"><img src="{{media url="wysiwyg/safety-page/panel-1_1.png"}}" alt=""></li>
+                  <li class="carousel__item"><img src="{{media url="wysiwyg/safety-page/panel-1_2.png"}}" alt=""></li>
+                  <li class="carousel__item"><img src="{{media url="wysiwyg/safety-page/panel-1_3.png"}}" alt=""></li>
+                </ul>
+                <div class="carousel__nav">
+                 <label for="carousel-1"></label>
+                 <label for="carousel-2"></label>
+                 <label for="carousel-3"></label>
+               </div>
+              </ul>
+            </div>
+            
+            <div class="cd-hero_founder-img desktop">
+              <img src="{{media url="wysiwyg/safety-page/panel-1_1.png"}}" alt="">
+              <img src="{{media url="wysiwyg/safety-page/panel-1_2.png"}}" alt="">
+              <img src="{{media url="wysiwyg/safety-page/panel-1_3.png"}}" alt="">
+            </div>
+            
+            <p class="cd-hero__description text-dark">When  we  developed  our  line,  we  looked  at  the  science  behind  what  made  dogs  enjoy  their  toys.  We  also  asked  how  human  children  were  protected  and  used  those  same  safety  standards.  Everyone  at  Playology&trade; remains  committed  to  designing  and  developing  the  best,  safest  and  healthiest  toys  we  possibly  can.</p><br>
+            <p class="cd-hero__description text-dark"><b>-Adam and Lendy Beatty, Founders</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-benefits">
+    <div class="cd-benefits__container" style="background-image: url('{{media url="wysiwyg/safety-page/panel-2_1.png"}}');">
+      <div class="cd-header">
+        <h1 class="heading-hero text-highlighted">MADE FROM DOG-SAFE MATERIALS</h1>
+        <h3 class="subheading text-white">Since there are no safety regulations on dog toys, we use the same standards created for children's toys.</h3>
+        <div class="cd-benefits__icons">
+          <div class="cd-benefits__single">
+            <div class="cd-benefits__icon"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 50.53 50.52%22>%3Cdefs>%3Cstyle>.cls-1{fill:%23a4c12e}.cls-2{fill:url(%23New_Gradient_Swatch_1)}.cls-3{fill:url(%23New_Gradient_Swatch_1-2)}%3C/style>%3ClinearGradient id=%22New_Gradient_Swatch_1%22 y1=%2225.26%22 x2=%2250.53%22 y2=%2225.26%22 gradientUnits=%22userSpaceOnUse%22>%3Cstop offset=%220%22 stop-color=%22%234d4d4d%22/>%3Cstop offset=%22.35%22 stop-color=%22%237d7d7d%22/>%3Cstop offset=%22.72%22 stop-color=%22%23ccc%22/>%3Cstop offset=%221%22 stop-color=%22%23fff%22/>%3C/linearGradient>%3ClinearGradient id=%22New_Gradient_Swatch_1-2%22 x1=%2211.89%22 y1=%2225.3%22 x2=%2239.04%22 y2=%2225.3%22 xlink:href=%22%23New_Gradient_Swatch_1%22/>%3C/defs>%3Ctitle>dog-safe%3C/title>%3Cg id=%22Layer_2%22 data-name=%22Layer 2%22>%3Cg id=%22Layer_1-2%22 data-name=%22Layer 1%22>%3Cpath class=%22cls-1%22 d=%22M48.51 25.3a23 23 0 1 1-23-23 23 23 0 0 1 23 23z%22/>%3Cpath class=%22cls-2%22 d=%22M47.58 25.26a22.64 22.64 0 0 1-14.91 21.08A22.35 22.35 0 0 1 6 14 22.58 22.58 0 0 1 29.65 3.35a22.62 22.62 0 0 1 17.93 21.91 1.48 1.48 0 0 0 3 0 25.63 25.63 0 0 0-16.4-23.65A25.3 25.3 0 0 0 3.4 38 25.56 25.56 0 0 0 30 50.09c11.9-2.23 20.29-12.89 20.49-24.83a1.48 1.48 0 0 0-2.91 0z%22/>%3Cpath class=%22cls-3%22 d=%22M39 18.16c0-1.64-.07-3.33-.07-5.21a1.2 1.2 0 0 0-.85-1.15L25.82 8a1.26 1.26 0 0 0-.72 0l-12.24 3.8A1.2 1.2 0 0 0 12 13c0 1.91 0 3.61-.07 5.26-.13 5.87-.22 10.11 1.7 14A21.66 21.66 0 0 0 25 42.61a1.12 1.12 0 0 0 .44.09 1.13 1.13 0 0 0 .45-.09 21.66 21.66 0 0 0 11.39-10.39c1.92-3.9 1.83-8.14 1.72-14.06zm-3.86 13a19.25 19.25 0 0 1-9.66 9.05 19.33 19.33 0 0 1-9.66-9.05c-1.66-3.36-1.57-7.36-1.45-12.88 0-1.33.07-2.83.07-4.44l11-3.47 11 3.47c0 1.58 0 3.06.08 4.38v.06c.18 5.51.27 9.51-1.4 12.87zm-6.29-12.84a4.22 4.22 0 0 0-3.07 1.32l-.32.33-.31-.33a4.22 4.22 0 0 0-6.15 0A4.62 4.62 0 0 0 19 26l5.72 6a1 1 0 0 0 .72.31 1 1 0 0 0 .69-.28l5.78-6a4.62 4.62 0 0 0 0-6.31 4.22 4.22 0 0 0-3.06-1.4zm-6.78 2a2.17 2.17 0 0 1 1.59.71l1.06 1.11a1 1 0 0 0 .72.32 1.15 1.15 0 0 0 .77-.32l1.05-1.11a2.19 2.19 0 0 1 3.18 0 2.54 2.54 0 0 1 0 3.48l-5 5.23-5-5.23a2.54 2.54 0 0 1 0-3.48 2.15 2.15 0 0 1 1.63-.68z%22/>%3C/g>%3C/g>%3C/svg>" alt="Slobber Wicking Technology" width="150"></div>
+            <h4 class="subheading cd-benefits__header text-white"><b>DOG SAFE MATERIALS</b></h4>
+            <p class="cd-benefits__description text-white">All Playology&trade; toys are tested to meet U.S. government safety standards for lead, phthalates, BPA and other toxins deemed hazardous.</p>
+          </div>
+        </div>
+      </h3></div>
+    </div>
+  </section>
+
+  <section class="cd-natural" style="background-image: url('{{media url="wysiwyg/safety-page/panel-3.png"}}');">
+    <div class="cd-natural__container cd-content__container">
+      <div class="cd-header">
+            <h1 class="heading-hero text-highlighted">Scents are <br>100% Natural</h1><br>
+            <h3 class="subheading text-white">We take millions of microscopic derivatives of the actual food and encapsulate them throughout the entire toy. All the joy of the scent, with no chemicals or unwanted calories.</h3><br>
+            <div class="cd-scents">
+              <span class="scent"><a href="https://playology.test4echo.co/bestsellers.html?scent=52">CHICKEN</a></span>
+              <span class="scent"><a href="https://playology.test4echo.co/bestsellers.html?scent=53">BACON</a></span>
+              <span class="scent"><a href="https://playology.test4echo.co/bestsellers.html?scent=50">BEEF</a></span>
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-benefits">
+    <div class="cd-benefits__container">
+      <div class="cd-header">
+        <h1 class="heading-hero text-white">MORE ABOUT OUR TOYS</h1>
+        <h3 class="text-white subheading">Since we are obsessed with dogs, we wanted to make sure Playology&trade; toys helped solve other challenges dogs face. </h3>
+        <div class="cd-benefits__icons">
+          <div class="cd-benefits__single">
+            <div class="cd-benefits__icon"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 51.01 51%22>%3Cdefs>%3Cstyle>.cls-1{fill:%239c5e95}.cls-2{fill:url(%23New_Gradient_Swatch_1)}.cls-3{fill:url(%23New_Gradient_Swatch_1-2)}%3C/style>%3ClinearGradient id=%22New_Gradient_Swatch_1%22 y1=%2225.5%22 x2=%2251.01%22 y2=%2225.5%22 gradientUnits=%22userSpaceOnUse%22>%3Cstop offset=%220%22 stop-color=%22%234d4d4d%22/>%3Cstop offset=%22.35%22 stop-color=%22%237d7d7d%22/>%3Cstop offset=%22.72%22 stop-color=%22%23ccc%22/>%3Cstop offset=%221%22 stop-color=%22%23fff%22/>%3C/linearGradient>%3ClinearGradient id=%22New_Gradient_Swatch_1-2%22 x1=%229.78%22 y1=%2225.5%22 x2=%2241.23%22 y2=%2225.5%22 xlink:href=%22%23New_Gradient_Swatch_1%22/>%3C/defs>%3Ctitle>treat free%3C/title>%3Cg id=%22Layer_2%22 data-name=%22Layer 2%22>%3Cg id=%22Layer_1-2%22 data-name=%22Layer 1%22>%3Cpath class=%22cls-1%22 d=%22M49 25.54A23.27 23.27 0 1 1 25.71 2.28 23.26 23.26 0 0 1 49 25.54z%22/>%3Cpath class=%22cls-2%22 d=%22M48 25.5a22.84 22.84 0 0 1-15 21.28A22.56 22.56 0 0 1 6 14.12 22.77 22.77 0 0 1 29.93 3.39 22.81 22.81 0 0 1 48 25.5a1.49 1.49 0 0 0 3 0A25.88 25.88 0 0 0 34.51 1.62 25.54 25.54 0 0 0 3.44 38.39a25.79 25.79 0 0 0 26.89 12.17c12-2.25 20.48-13 20.68-25.06-.01-1.91-2.95-1.91-3.01 0z%22/>%3Cpath class=%22cls-3%22 d=%22M41.15 24.66a3.26 3.26 0 0 0-1.68-2.09c-1.08-.61-3.1-1-5.49 2 0-2.82.09-7.94.18-11.44 0-1.12-.58-3.26-2.78-3.26a3.94 3.94 0 0 0-1.7.33 3 3 0 0 0-.61-1.2 2.37 2.37 0 0 0-1.69-.82 3.34 3.34 0 0 0-2.56.74 2.51 2.51 0 0 0-.6.88 2.53 2.53 0 0 0-1.73-.48c-1.36.08-2.12 1.28-2.49 2.53a.6.6 0 0 0-.13.09 3.71 3.71 0 0 0-2.11-.54c-1.67 0-2.5 1.58-2.45 4.6 0 1.32.11 14.57.12 17l-.61.63a3.49 3.49 0 0 0-4.4 1.34l-.11.14c-1.25 1.51 0 3.12.49 3.72a2.86 2.86 0 0 0 2.92.53 3.48 3.48 0 0 0 .11 1.81 2.69 2.69 0 0 0 1.77 1.6 2.72 2.72 0 0 0 .75.11 3.44 3.44 0 0 0 2-.7 3.14 3.14 0 0 0 1.18-2.86 10.83 10.83 0 0 0 5.31 1.8h.45c3.13-.25 5.66-1 7.77-3.92 1.9-2.62 7.41-9.45 7.51-9.57a4.14 4.14 0 0 0 .59-2.93m-23.53 13l.17.43c0 .07.8 2.11-.31 2.92a1.75 1.75 0 0 1-1.49.37 1.32 1.32 0 0 1-.83-.74 3 3 0 0 1 .07-1.49 1.15 1.15 0 0 0-.4-1.15 1.17 1.17 0 0 0-1.23-.14 2.13 2.13 0 0 1-1.67.08c-.94-1.2-.78-1.59-.51-1.91l.12-.14c.68-.83 1.26-1.56 3.17-.74l.46.19.27-.28v.06l6.27-6.27.06-.06-.14-.14-.08-.21s-.74-2 .34-2.77a1.61 1.61 0 0 1 1.4-.33 1.22 1.22 0 0 1 .77.71A2.87 2.87 0 0 1 24 27.4a1.13 1.13 0 0 0 1.57 1.3 2.1 2.1 0 0 1 1.58-.05c.86 1.15.7 1.51.45 1.81l-.11.13c-.69.81-1.23 1.46-3 .65l-.29-.13L24 31zm21.76-10.97c-.24.31-5.59 6.94-7.51 9.57-1.79 2.47-3.9 3.11-6.72 3.33-2 .15-4.22-1.13-5.28-1.83 1-1.15 3.1-3.66 4.43-5a3.36 3.36 0 0 0 4.25-1.22l.11-.13c1.24-1.44 0-3-.4-3.62a2.76 2.76 0 0 0-2.78-.59 3.27 3.27 0 0 0-.08-1.71 2.64 2.64 0 0 0-1.68-1.58 3 3 0 0 0-2.67.52c-1.54 1.06-1.26 3-1 4l-3.17 3.14c0-4.22-.09-14.42-.11-15.57s.09-3.11 1-3.13h.08a1.82 1.82 0 0 1 1.76.85v8.07a.73.73 0 0 0 .73.73.73.73 0 0 0 .72-.73v-7.36l.05-.79c0-.6.38-2.87 1.45-2.94s1.29 1 1.31 1.28h.05v9.73a.73.73 0 0 0 .72.73.73.73 0 0 0 .73-.73V11.11a1.85 1.85 0 0 1 .44-1.11 1.94 1.94 0 0 1 1.47-.34.86.86 0 0 1 .67.31 2.49 2.49 0 0 1 .42 1.47 2.77 2.77 0 0 1 0 .33v10a.72.72 0 1 0 1.44 0v-9.83c.1-.17.44-.58 1.56-.58 1.28 0 1.33 1.63 1.33 1.8-.37 14.15-.24 14.18.45 14.38l.56.14.28-.49c1-1.71 2.91-4.42 4.75-3.36a1.83 1.83 0 0 1 1 1.16 2.65 2.65 0 0 1-.35 1.74%22/>%3C/g>%3C/g>%3C/svg>" alt="Slobber Wicking Technology" width="150"></div>
+            <h4 class="cd-benefits__header subheading text-white"><b>TREAT FREE</b></h4>
+            <p class="cd-benefits__description text-white">Over 50% of U.S. dogs are overweight or obese. Playology&trade; toys smell so engagingly delicious, you don’t have to add empty calories to make them interesting.</p>
+          </div>
+          <div class="cd-benefits__single">
+            <div class="cd-benefits__icon"><img src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 51.01 51%22>%3Cdefs>%3Cstyle>.cls-1{fill:%2300bed6}.cls-2{fill:url(%23New_Gradient_Swatch_1)}.cls-3{fill:url(%23New_Gradient_Swatch_1-2)}%3C/style>%3ClinearGradient id=%22New_Gradient_Swatch_1%22 y1=%2225.5%22 x2=%2251.01%22 y2=%2225.5%22 gradientUnits=%22userSpaceOnUse%22>%3Cstop offset=%220%22 stop-color=%22%234d4d4d%22/>%3Cstop offset=%22.35%22 stop-color=%22%237d7d7d%22/>%3Cstop offset=%22.72%22 stop-color=%22%23ccc%22/>%3Cstop offset=%221%22 stop-color=%22%23fff%22/>%3C/linearGradient>%3ClinearGradient id=%22New_Gradient_Swatch_1-2%22 x1=%2212.29%22 y1=%2225.5%22 x2=%2244.25%22 y2=%2225.5%22 xlink:href=%22%23New_Gradient_Swatch_1%22/>%3C/defs>%3Ctitle>easy to clean%3C/title>%3Cg id=%22Layer_2%22 data-name=%22Layer 2%22>%3Cg id=%22Layer_1-2%22 data-name=%22Layer 1%22>%3Cpath class=%22cls-1%22 d=%22M49 25.54A23.27 23.27 0 1 1 25.71 2.28 23.26 23.26 0 0 1 49 25.54z%22/>%3Cpath class=%22cls-2%22 d=%22M48 25.5a22.84 22.84 0 0 1-15 21.28A22.56 22.56 0 0 1 6 14.12 22.77 22.77 0 0 1 29.93 3.39 22.81 22.81 0 0 1 48 25.5a1.49 1.49 0 0 0 3 0A25.88 25.88 0 0 0 34.51 1.62 25.54 25.54 0 0 0 3.44 38.39a25.79 25.79 0 0 0 26.89 12.17c12-2.25 20.48-13 20.68-25.06-.01-1.91-2.95-1.91-3.01 0z%22/>%3Cpath class=%22cls-3%22 d=%22M23.69 36.45a5.65 5.65 0 0 1-5.64-5.65 1 1 0 1 0-2.09 0 7.74 7.74 0 0 0 7.73 7.73 1 1 0 1 0 0-2.08zM34 25.73a11.26 11.26 0 0 1 1.14 4.95A11.41 11.41 0 1 1 13.79 25l9-15.58.07-.09.14-.11v-.06l.1-.07H23.79L24 9h.19l.1.07.07.06.07.08.06.09 3.84 6.65a6 6 0 0 0-1.86 1l-2.89-5-8.09 14a9.32 9.32 0 1 0 16.58.8A5.68 5.68 0 0 0 34 25.73zM38.26 18a5.17 5.17 0 0 1-5.16-5.16.89.89 0 0 0-1.78 0A5.18 5.18 0 0 1 26.69 18a3.87 3.87 0 0 0-.48 0 .88.88 0 0 0-.66.29.89.89 0 0 0 .6 1.55 5.25 5.25 0 0 0 .56 0 5.18 5.18 0 0 1 4.63 4.61v.53a.89.89 0 0 0 .89.89.89.89 0 0 0 .9-.89v-.53a5.16 5.16 0 0 1 5.13-4.63.9.9 0 1 0 0-1.79zm-6 3.51a7 7 0 0 0-2.62-2.6 7 7 0 0 0 2.6-2.65 7 7 0 0 0 2.65 2.63 7 7 0 0 0-2.65 2.6zm12 4.06a.6.6 0 0 0-.6-.6h-.39a3 3 0 0 1-2.67-2.65v-.36a.59.59 0 0 0-.59-.6.6.6 0 0 0-.6.6v.36a3 3 0 0 1-3 2.69.59.59 0 0 0-.6.59.6.6 0 0 0 .6.6 3 3 0 0 1 3 3.05.59.59 0 0 0 .6.59.58.58 0 0 0 .59-.59v-.05a3.05 3.05 0 0 1 2.68-3h.32a.73.73 0 0 0 .65-.65zM40 27.06a4.28 4.28 0 0 0-1.47-1.46A4.19 4.19 0 0 0 40 24.16a4.22 4.22 0 0 0 1.45 1.43A4.31 4.31 0 0 0 40 27.06z%22/>%3C/g>%3C/g>%3C/svg>" alt="Durable Materials" width="150"></div>
+            <h4 class="cd-benefits__header subheading text-white"><b>EASY TO CLEAN</b></h4>
+            <p class="cd-benefits__description text-white">Dirt and sand trapped on the surface of a toy can grind down your pup’s teeth. All Playology&trade; toys are easy to clean. Plus, our Encapsiscent&trade; Technology means you won’t wash away the all-natural scent they love.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carousel" class="section carousel-section" style="padding-top:0px;">
+    {{block class="Magento\Framework\View\Element\Template" title="Shop our bestsellers" category_id="24" auto_play="false" template="BigHippo_ProductCarousel::carousel.phtml" }}
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="/scripts/doggo.js"></script> -->
+<script>
+  $(function() {                       //run when the DOM is ready
+      $(".nav-toggle").click(function() {  //use a class, since your ID gets mangled
+          $(".header").toggleClass("nav-open");         //add the class to the clicked element
+          $(".header").toggleClass("nav-before-open");       //add the class to the clicked element
+      });
+  });
+</script>
+</body>
