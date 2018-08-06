@@ -1,10 +1,4 @@
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
-	
-	<style>/**
+<style>/**
  * index.scss
  */
 @media only screen and (max-width: 1023px) {
@@ -565,6 +559,10 @@ a {
   background-position: center;
   background-attachment: fixed; }
 
+@media only screen and (max-width: 768px) {
+  .cd-nose, .cd-engagement, .cd-hero, .cd-safety {
+    background-attachment: scroll; } }
+
 .cd-engagement__container, .cd-safety__container, .cd-nose__container {
   width: 50%;
   height: 100vh; }
@@ -593,7 +591,7 @@ a {
 .cd-hero .action.scroll-down {
   display: inline-block;
   text-decoration: none;
-  bottom: 100px;
+  bottom: 40px;
   cursor: pointer;
   left: 50%;
   line-height: normal;
@@ -798,22 +796,71 @@ h1 sup {
   vertical-align: text-top;
   line-height: 2.2; }
 
-/* -------------------------------- 
-IMPORTED FROM TALOS
--------------------------------- */
-</style>  
-</head>
-<body>
-	<section class="cd-hero" style="background-image: url('https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/homepage/panel-1.png');">
-    <div id="video-background" class="hero-background"></div>
-		<div class="cd-hero__container cd-content__container">
-			<div class="cd-header" style="position:relative;">
-		            <h1 class="heading-hero text-highlighted">The Science of<br>Scent Unleashed</h1>
-			        <h3 class="subheading text-white">Our scented toys keep dogs more engaged.</h3>
-			        <a class="cta button outline-light" href="{{store direct_url='shop.html'}}">Shop Now</a></div>
-				    <a class="action scroll-down"></a>
-			</div>
-	</section>
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-video #player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.bg-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+</style>
+
+<script>
+  // Loads the YouTube IFrame API JavaScript code.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  // Inserts YouTube JS code into the page.
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+
+  // onYouTubeIframeAPIReady() is called when the IFrame API is ready to go.
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'X4Q_7q0ELoc', // the ID of the video (mentioned above)
+      playerVars: {
+        autoplay: 1, // start automatically
+        controls: 0, // don't show the controls (we can't click them anyways)
+        modestbranding: 1, // show smaller logo
+        loop: 1, // loop when complete
+        showinfo: 0,
+        playlist: 'X4Q_7q0ELoc' // required for looping, matches the video ID
+      }
+    });
+  }
+</script>
+
+  <section id="page-banner" class="bg-image cd-hero" >
+        <h1 class="heading-hero text-highlighted">The Science of<br>Scent Unleashed</h1>
+        <h3 class="subheading text-white">Our scented toys keep dogs more engaged.</h3>
+        <a class="cta button outline-light" href="{{store direct_url='shop.html'}}">Shop Now</a></div>
+    <div class="bg-video">
+      <div class="overlay">
+      </div>
+      <div id="player" style="width:100%;height:100vh;"></div>
+    </div>
+  </section>
 
 	<section class="cd-nose" style="background-image: url('https://d3hw3v7a3r0h49.cloudfront.net/wysiwyg/homepage/panel-2.png');">
 		<div class="cd-nose__container cd-content__container">
@@ -874,7 +921,7 @@ IMPORTED FROM TALOS
 			<div class="cd-header">
 		        <h1 class="heading-hero text-highlighted">More than<br>90% Of Dogs</h1>
 		        <h3 class="subheading text-white">Stay Engaged Longer With Playology Toys</h3>
-		        <a class="cta button outline-light" href="{{store direct_url='shop.html'}}">SHOP NOW</a>
+		        <a class="cta button outline-light" href="{{store direct_url='science'}}">Learn More</a>
 			</div>
 		</div>
 	</section>
@@ -884,7 +931,7 @@ IMPORTED FROM TALOS
 			<div class="cd-header">
 		        <h1 class="heading-hero text-highlighted">Safety First</h1>
 		        <h3 class="subheading text-white">Playology toys are made with the same standards as children's toys</h3>
-		        <a class="cta button outline-light" href="{{store direct_url='safety.html'}}">Learn More</a>
+		        <a class="cta button outline-light" href="{{store direct_url='safety'}}">Learn More</a>
 			</div>
 		</div>
 	</section>
@@ -900,15 +947,15 @@ IMPORTED FROM TALOS
 	        	<div class="cd-header">
 		        	<h1 class="title text-white">EVERY DOG HAS ITS DAY... <br>AND ITS TOY</h1>
 		            <br>
-		            <h2><span class="text-highlighted">NAME: </span><span class="text-white">LUCY</span></h2>
+		            <h2><span class="text-highlighted">NAME: </span><span class="text-white" id="name">LUCY</span></h2>
 		            <br>
-		            <h2><span class="text-highlighted">WEIGHT: </span><span class="text-white">8 LBS.</span></h2>
+		            <h2><span class="text-highlighted" id="weight">WEIGHT: </span><span class="text-white">8 LBS.</span></h2>
 		            <br>
-		            <h2><span class="text-highlighted">AGE: </span><span class="text-white">1 YEAR</span></h2>
+		            <h2><span class="text-highlighted" id="age">AGE: </span><span class="text-white">1 YEAR</span></h2>
 		            <br>
-		            <h2><span class="text-highlighted">CHEW: </span><span class="text-white">MODERATE CHEWER</span></h2>
+		            <h2><span class="text-highlighted" id="chew">CHEW: </span><span class="text-white">MODERATE CHEWER</span></h2>
 		            <br>
-		            <h2><span class="text-highlighted">RECOMMENDED TOY: </span><span class="text-white">DRI-TECH ROPE</span></h2>
+		            <h2><span class="text-highlighted" id="toy">RECOMMENDED TOY: </span><span class="text-white">DRI-TECH ROPE</span></h2>
 		            <br>
 		            <a class="cta button outline-light" href="{{store direct_url='shop.html'}}">FIND YOURS</a>
 	        	</div>
@@ -916,16 +963,4 @@ IMPORTED FROM TALOS
 	    </div>
 	</section>
 
-	
-
 	<section id="instagram" class="section instagram-section">{{block class="BigHippo\InstagramFeed\Block\Widget\Instagram" title_instagram="@playologypets on Instagram" template="BigHippo_InstagramFeed::widget/instagram.phtml" }}</section>
-
-<script>
-	$(function() {                       //run when the DOM is ready
-		  $(".nav-toggle").click(function() {  //use a class, since your ID gets mangled
-		      $(".header").toggleClass("nav-open");         //add the class to the clicked element
-		      $(".header").toggleClass("nav-before-open");       //add the class to the clicked element
-		  });
-	});
-</script>
-</body>
